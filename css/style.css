@@ -25,8 +25,7 @@
 }
 
 .animation .large-header {
-	background: url("../images/bg.jpg"), rgba(50, 50, 50, .6);
-    background-blend-mode: overlay;
+	background: url("../images/bg-dark.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,17 +44,84 @@
 	transform: translate3d(-50%,-50%,0);
 }
 
-.animation .main-title {
-	text-transform: uppercase;
-	font-size: 4.2em;
-	letter-spacing: 0.1em;
+@media only screen and (max-width : 1100px) {
+    .main-title {
+        top: 50%;
+    }
+    .main-nav {
+        width: 90%;
+    }
+    
+    .main-nav span a {
+        width: 5%;
+        font-size: 16px;
+    }
 }
 
-@media only screen and (max-width : 768px) {
-	.main-title img {
-		width: 10%;
-        height: 10%;
-	}
+@media only screen and (max-width : 800px) {
+    .main-title {
+        top: 50%;
+    }
+    
+    .main-nav {
+        width: 90%;
+    }
+    
+    .main-nav span a {
+        width: 4%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .main-title {
+        top: 50%;
+    }
+    
+    .main-nav {
+        width: 95%;
+    }
+    
+    .main-nav span a {
+        width: 20%;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width : 530px) {
+    .main-title {
+        top: 50%;
+    }
+    
+    .main-nav {
+        top: 5%;
+        width: 100%;
+    }
+    
+    .main-nav span a {
+        width: 20%;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width : 510px) {
+    .main-title {
+        top: 50%;
+    }
+    
+    .main-nav {
+        top: 5%;
+        width: 100%;
+    }
+    
+    .main-nav span {
+        margin: 5%;
+    }
+    
+    .main-nav span a {
+        margin: 0;
+        font-size: 10px;
+    }
 }
 
 .main-title img {
@@ -65,34 +131,36 @@
 }
 
 .bgimg-1 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bgimg-1 {
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg-dark.jpg");
     height: 800px;
     min-height: 100%;
 }
 
 .caption {
-  position: absolute;
-  left: 0;
-  top: 8%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+    position: absolute;
+    left: 0;
+    top: 8%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    margin-top: 100px;
 }
 
 .caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 200;
 }
 
 body, html {
@@ -105,13 +173,14 @@ nav {
 	padding: 0;
     top: 5%;
     left: 50%;
+    width: 75%;
 	color: #f9f1e9;
 	text-align: center;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
 
-nav a {
+nav span {
     display: inline-block;
     position: relative;
     text-align: center;
@@ -119,9 +188,10 @@ nav a {
     font-size: 20px;
 }
 
-nav a:hover,
-nav a:focus {
+nav span a:hover,
+nav span a:focus {
 	outline: none;
+    color: rgba(88, 81, 86, 1);
 }
 
 nav.cl-effect-3 a {
@@ -134,7 +204,7 @@ nav.cl-effect-3 a::after {
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background: rgba(255,255,255,0.6);
+	background: rgba(255,255,255,0.8);
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -155,15 +225,31 @@ nav.cl-effect-3 a:focus::after {
 
 #home {
     margin: 0;
-    color: #777;
-    background-color: white;
+    height: 100vh;
+    background: transparent;
     text-align:center;
-    padding:50px 80px;
     text-align: justify;
 }
 
+.home-caption {
+    position: absolute;
+	padding: 0;
+    top: 90%;
+    left: 50%;
+    width: 80%;
+	color: #f9f1e9;
+	text-align: center;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.home-caption h1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
 #about {
-    margin: 0;
+    margin-top: 0;
     color: #777;
     background-color: white;
     text-align:center;

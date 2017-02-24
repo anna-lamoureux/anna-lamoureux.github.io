@@ -6,7 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>ANNA: Designer || Developer</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	</head>
 	<body>
 		<div class="container animation">
@@ -14,16 +16,21 @@
 				<div id="large-header" class="large-header">
 					<canvas id="demo-canvas"></canvas>
                     <nav class="main-nav cl-effect-3">
-                        <a href="#">HOME</a>
-                        <a href="#">ABOUT</a>
-                        <a href="#">EXPERIENCE</a>
-                        <a href="#">CONTACT</a>
+                        <span><a href="#">HOME</a></span>
+                        <span><a href="#">ABOUT</a></span>
+                        <span><a href="#">EXPERIENCE</a></span>
+                        <span><a href="#">CONTACT</a></span>
                     </nav>
-					<div class="main-title"><img src="images/triangle-white.png"></span></div>
+					<div class="main-title">
+                        <img src="images/triangle-white.png">
+                    </div>
+                    <div class="row">
+                        <div class="home-caption">
+                            <h1>My name is Anna Lamoureux and I'm a trained computer science geek with a knack for design</h1>
+                        </div>
+                    </div>
 				</div>
                 <div id="home">
-                    <h3 style="text-align:center;">Some Caption Goes Here</h3>
-                    <p>Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
                 </div>
                 <div class="bgimg-1" id="about">
                     <div class="caption">
@@ -49,6 +56,7 @@
 		<script src="js/EasePack.min.js"></script>
 		<script src="js/rAF.js"></script>
 		<script src="js/animation.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 	</body>
     <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
 </html>
