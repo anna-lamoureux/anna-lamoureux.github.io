@@ -619,10 +619,3 @@
     }
     /* End Experience */ 
 }
-
-@media only screen and (max-width : 1024px) {
-    /* Experience */
-    #experience {
-        height: 145vw;
-    }
-}
