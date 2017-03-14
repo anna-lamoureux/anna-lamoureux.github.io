@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
 	var $w = $(window).scroll(function(){
         if($w.scrollTop() >= 100) {   
             $("nav").addClass("scroll-mode");
@@ -26,7 +27,7 @@ $(document).ready(function(){
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                 if (target.length) {
                     $('html, body').animate({
-                        scrollTop: target.offset().top - 67
+                        scrollTop: target.offset().top - 68
                     }, 1500);
                     return false;
                 }

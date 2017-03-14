@@ -1,0 +1,391 @@
+/* Entire Site Formatting */
+* {
+    font-family: "Heebo", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.row {
+    float: left;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a img {
+    float: left;
+}
+
+.caption span.border {
+    background-color: white;
+    color: #474747;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+}
+/* End Entire Site Formatting */
+
+
+/* Background Formatting */
+.bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-2 {
+    background-image: url("../images/bgs/about.jpg");
+}
+
+.bgimg-3 {
+    background-image: url("../images/bgs/home-exp.jpg");
+}
+
+.bgimg-4 {
+    background-image: url("../images/bgs/contact.jpg");
+}
+/* End Background Formatting */
+
+
+/* Nav Bar */
+nav {
+     width: 100%;
+    position: fixed;
+	color: #f9f1e9;
+	text-align: center;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.scroll-mode {
+    background: rgba(60, 60, 60, .5);
+}
+
+nav span {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+}
+
+nav span a:hover,
+nav span a:focus {
+	outline: none;
+    color: rgba(88, 81, 86, 1);
+}
+
+nav.cl-effect-3 a {
+	padding: 8px 0;
+}
+
+nav.cl-effect-3 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: rgba(255,255,255,0.8);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+nav.cl-effect-3 a:hover::after,
+nav.cl-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+/* End Nav Bar */
+
+
+/* Home */
+#home {
+    margin: 0;
+    height: 100vh;
+    background: transparent;
+    text-align:center;
+    text-align: justify;
+}
+
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+    float: left;
+}
+
+.animation .large-header {
+	background: url("../images/bgs/home-exp.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-title {
+	position: absolute;
+	color: #f9f1e9;
+	text-align: center;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.main-title img {
+    opacity: .9;
+}
+
+.home-caption {
+    position: absolute;
+	color: #f9f1e9;
+	text-align: center;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.home-caption h1 {
+    font-weight: 100;
+}
+/* End Home */
+
+
+/* About */
+#about {
+    margin-top: 0;
+    color: #777;
+    background-color: white;
+    text-align: center;
+    text-align: justify;
+}
+
+#portrait {
+    background: url(../images/about/portrait.jpg);
+    background-size: cover;
+    float: left; 
+}
+
+#about-me {
+    background-color: rgba(50, 50, 50, .6);
+    font-weight: 100;
+    text-align: left;
+    float: right;
+}
+/* End About */
+
+
+/* Experience */
+#experience {
+    margin: 0;
+    color: #777;
+    background-color: white;
+    text-align: center;
+    text-align: justify;
+}
+
+.row.languages {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.category-name {
+    float: left;
+    font-weight: 500;
+}
+
+.projects a img {
+        width: 25vw
+}
+
+.bar-container {
+    float: left;
+}
+
+.skill_name {
+    color: white;
+    float: left;
+    border-radius: 3px 0px 0px 3px;
+}
+
+#skill_java {
+    background-color: darkorange;
+}
+
+#skill_py {
+    background-color: darkblue;
+}
+
+#skill_swft {
+    background-color: teal;
+}
+
+#skill_html {
+    background-color: firebrick;
+}
+
+#skill_css {
+    background-color: limegreen;
+}
+
+#skill_js {
+    background-color: dodgerblue;
+}
+
+#skill_mysql {
+    background-color: goldenrod;
+}
+
+#skill_jqry {
+    background-color: darkmagenta;
+}
+
+.skillbar_wrapper {
+    float: left;
+    position: relative;
+    display: block;
+    background-color: rgba(200, 200, 200, .8);
+    border-radius: 0px 3px 3px 0px;
+}
+
+.skillbar_bar {
+    width: 0px;
+    border-radius: 0px 3px 3px 0px;
+}
+
+#skillbar_java {
+    background-color: orange;
+}
+
+#skillbar_py {
+    background-color: mediumblue;
+}
+
+#skillbar_swft {
+    background-color: lightseagreen;
+}
+
+#skillbar_html {
+    background-color: indianred;
+}
+
+#skillbar_css {
+    background-color: lime;
+}
+
+#skillbar_js {
+    background-color: deepskyblue;
+}
+
+#skillbar_mysql {
+    background-color: gold;
+}
+
+#skillbar_jqry {
+    background-color: mediumorchid;
+}
+
+.skill_bar_percent {
+    position: absolute;
+    color: black;
+}
+
+#exp-tools {
+    float: right;
+    position: relative;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.column h2 {
+    font-weight: 200
+}
+/* End Experience */
+
+
+/* Contact */
+#contact {
+    margin: 0;
+    color: #777;
+    background-color: white;
+    text-align:center;
+    text-align: justify;
+}
+
+#contact-text {
+    float: left;
+}
+
+.row.contact {
+    float: left;
+    justify-content: center;
+}
+
+.row.form {
+    float: left;
+    justify-content: center;
+}
+
+.row h1 {
+    font-weight: 300;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+button, input, textarea {
+    color: #4D4D4D;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+/* End Contact */
+
+
+/* Footer */
+footer {
+    position: relative;
+}
+footer * {
+    color: #222222;
+    font-weight: 200;
+    text-align: center;
+}
+/* End Footer */
