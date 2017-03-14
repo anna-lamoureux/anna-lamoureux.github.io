@@ -10,6 +10,10 @@
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
+        
+        if(width <= 500) {
+            height = 560;
+        }
         target = {x: width/2, y: height/2};
 
         largeHeader = document.getElementById('large-header');
