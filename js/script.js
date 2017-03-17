@@ -5,14 +5,12 @@ $(document).ready(function(){
     });
     
 	var $w = $(window).scroll(function(){
-        if ($w.width > 500) {
-           if($w.scrollTop() >= 100) {   
-                $("nav").addClass("scroll-mode");
-            }
-            else {
-                $("nav").removeClass("scroll-mode");
-            } 
+        if($w.scrollTop() >= 100) {   
+            $("nav").addClass("scroll-mode");
         }
+        else {
+            $("nav").removeClass("scroll-mode");
+        } 
         
         if($w.scrollTop <= 700) {
             $("#nav-home").addClass("active");
