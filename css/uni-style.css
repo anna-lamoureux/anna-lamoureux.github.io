@@ -77,6 +77,10 @@ nav {
     background: rgba(60, 60, 60, .5);
 }
 
+.active {
+    color: deepskyblue;
+}
+
 nav span {
     display: inline-block;
     position: relative;

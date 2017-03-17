@@ -9,11 +9,12 @@
 		<link rel="stylesheet" type="text/css" href="css/d-style.css">
         <link rel="stylesheet" type="text/css" href="css/t-style.css">
         <link rel="stylesheet" type="text/css" href="css/p-style.css">
-        
+        <link rel="stylesheet" type="text/css" href="css/tooltipster/tooltipster.bundle.min.css">
+        <link rel="stylesheet" type="text/css" href="css/tooltipster/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900' rel='stylesheet' type='text/css'>
         <link type="image/png" rel="shortcut icon" href="images/logos/icon.png">
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="js/script.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="container animation">
@@ -21,10 +22,10 @@
 				<div id="large-header" class="large-header">
 					<canvas id="demo-canvas"></canvas>
                     <nav class="main-nav cl-effect-3">
-                        <span><a href="#large-header">HOME</a></span>
-                        <span><a href="#about">ABOUT</a></span>
-                        <span><a href="#experience">EXPERIENCE</a></span>
-                        <span><a href="#contact">CONTACT</a></span>
+                        <span><a href="#large-header" id="nav-home">HOME</a></span>
+                        <span><a href="#about" id="nav-about">ABOUT</a></span>
+                        <span><a href="#experience" id="nav-exp">EXPERIENCE</a></span>
+                        <span><a href="#contact" id="nav-cont">CONTACT</a></span>
                     </nav>
 					<div class="main-title">
                         <img src="images/logos/triangle-white.png">
@@ -52,13 +53,13 @@
                         <span class="border">EXPERIENCE</span>
                         <div class="category-name webs">WEBSITES</div>
                         <div class="row websites">
-                            <a href="#"><img src="images/websites/iced.jpg"></a>
-                            <a href="#"><img src="images/websites/breakthrough-audio.jpg"></a>
+                            <a href="http://students.moravianinteractive.com/spring2017/stacl06/iced/"><img src="images/websites/iced.jpg" class="tooltip" title="This was the final project for my first college web design course.<br/>The site is not fully responsive."></a>
+                            <a href="#"><img src="images/websites/breakthrough-audio.jpg" class="tooltip" title="This was the first project for my first college web design course.<br/>The site is NOT responsive."></a>
                             <a href="http://spglassworks.com/"><img src="images/websites/spglassworks.jpg"></a>
                         </div>
                         <div class="row">
                             <a href="http://moraviancollege.github.io/"><img src="images/websites/moraviancollege-github-io.jpg"></a>
-                            <a href="#"><img src="images/websites/webking.jpg"></a>
+                            <a href="#"><img src="images/websites/webking.jpg" class="tooltip" title="This was the second project for my first college web design course. The site is NOT responsive."></a>
                             <a href="#"><img src="images/websites/mortons-moo.jpg"></a>
                         </div>
                         <div class="category-name projs">PROJECTS</div>
@@ -191,10 +192,11 @@
     <footer>
         <h4 style="text-align:center;">&copy; ANNA LAMOUREUX</h4>
     </footer>
-		<script src="js/TweenLite.min.js"></script>
-		<script src="js/EasePack.min.js"></script>
-		<script src="js/rAF.js"></script>
-		<script src="js/animation.js"></script>
+		<script type="text/javascript" src="js/TweenLite.min.js"></script>
+		<script type="text/javascript" src="js/EasePack.min.js"></script>
+		<script type="text/javascript" src="js/rAF.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+        <script type="text/javascript" src="js/tooltipster/tooltipster.bundle.min.js"></script>
 	</body>
     <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
 </html>
