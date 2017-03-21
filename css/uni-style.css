@@ -324,6 +324,10 @@ nav.cl-effect-3 a:focus::after {
     position: relative;
 }
 
+#exp-tools h2 {
+    text-align: center;
+}
+
 .icons {
     display: flex;
     flex-direction: row;

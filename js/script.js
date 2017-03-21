@@ -1,7 +1,8 @@
 $(document).ready(function(){
     
     $(".tooltip").tooltipster({
-        theme: "tooltipster-shadow"
+        theme: "tooltipster-shadow",
+        maxWidth: 400
     });
     
 	var $w = $(window).scroll(function(){

@@ -59,6 +59,213 @@
 
 }
 
+@media only screen and (max-width : 1000px) {
+    /* Experience */
+    #experience {
+        height: 155vw;
+    }
+    
+    .langs, .tools {
+        font-size: 24px;
+        width: 35vw;
+        margin-left: 0vw;
+    }
+
+    .bar-container {
+        margin: 10px;
+        margin-left: -24vw;
+        width: 70%;
+    }
+
+    .skill_name {
+        margin-left: 250px;
+        padding-left: 8px;
+        width: 5.8vw;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .skillbar_wrapper {
+        margin-bottom: 5px;
+        width: 24vw;
+        height: 30px;
+    }
+    
+    .skillbar_bar {
+        height: 30px;
+    }
+
+    .skill_bar_percent {
+        right: 10px;
+        top: 0px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #exp-tools {
+        margin-top: -560px;
+        left: -2vw;
+    }
+    
+    .icons a img {
+        width: 35px;
+        margin-top: 25px;
+        margin-left: -2.4vw;  
+    }
+    
+    #docker img {
+        width: 45px;
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+    
+    .design h2 {
+        margin-right: 32px;
+    }
+    
+    .dev h2, .design h2 {
+        padding-top: 4px;
+    }
+    /* End Experience */ 
+}
+
+@media only screen and (max-width : 950px) {
+    /* Experience */
+    #experience {
+        height: 160vw;
+    }
+    
+    .langs, .tools {
+        font-size: 24px;
+        width: 35vw;
+        margin-left: 0vw;
+    }
+
+    .bar-container {
+        margin: 10px;
+        margin-left: -28vw;
+        width: 75%;
+    }
+
+    .skill_name {
+        font-size: 10px;
+    }
+
+    #exp-tools {
+        margin-top: -560px;
+        left: -2vw;
+    }
+    
+    #exp-tools h2 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    .icons a img {
+        width: 35px;
+        margin-top: 25px;
+        margin-left: -2.4vw;  
+    }
+    
+    #docker img {
+        width: 45px;
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+    
+    .dev h2, .design h2 {
+        padding-top: 12px;
+    }
+    /* End Experience */ 
+}
+
+@media only screen and (max-width : 900px) {
+    .icons a img {
+        width: 35px;
+        margin-top: 25px;
+        margin-left: -3vw;  
+    }
+}
+
+@media only screen and (max-width : 875px) {
+    /* Experience */
+    #experience {
+        height: 250vw;
+    }
+    
+    .category-name {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        width: 100%;
+        height: 50px;
+        letter-spacing: 3px;
+        font-size: 40px; 
+    }
+
+    .bar-container {
+        margin: 15px;
+        width: 100%;
+    }
+
+    .skill_name {
+        margin-left: 0px;
+        padding-left: 10px;
+        width: 10vw;
+        height: 40px;
+        line-height: 40px;
+        font-size: 13px;
+    }
+
+    .skillbar_wrapper {
+        margin-bottom: 15px;
+        width: 60vw;
+        height: 40px;
+    }
+
+    .skillbar_bar {
+        height: 40px;
+    }
+
+    .skill_bar_percent {
+        right: 10px;
+        top: 3px;
+        font-size: 12px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    #exp-tools {
+        margin-top: 0px;
+        left: 18vw;
+        width: 100vw;
+    }
+    
+    #exp-tools h2 {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    
+    .icons a img {
+        width: 50px;
+        margin-top: 25px;
+        margin-left: -1.2vw;  
+    }
+    
+    #docker img {
+        width: 45px;
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+    
+    .dev h2, .design h2 {
+        padding-top: 12px;
+    }
+    /* End Experience */ 
+}
+
 /*Tablet Breakpoints Portrait*/
 @media only screen and (max-width : 768px) {
     a img {
