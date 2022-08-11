@@ -1,1 +1,136 @@
-<anna-lamoureux.github.io-nx-welcome></anna-lamoureux.github.io-nx-welcome>
+<div id="container" class="align-self-center px-4 pt-4 flex-col">
+<!-- Header -->
+  <div class="flex w-full justify-content-between vertical-align-middle">
+    <h2 class="mt-2 font-light">Anna Lamoureux</h2>
+    <div>
+      <button pButton type="button" label="Contact Me" class="p-button-outlined"></button>
+    </div>
+  </div>
+
+  <div class="spacer-xl"></div>
+
+  <!-- Headliner Section -->
+  <div id="headliner">
+    <div id="headliner-text" class="w-7">
+      <h2 class="font-light line-height-2 text-4xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Sit amet est placerat in egestas. Scelerisque in dictum non consectetur. In eu mi bibendum neque
+        egestas congue quisque egestas. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien.
+      </h2>
+    </div>
+    <div id="headliner-gradient-box" class="w-5 border-round"></div>
+  </div>
+
+  <div class="spacer-lg"></div>
+
+  <!-- About Section -->
+  <div id="about" class="flex justify-content-between">
+    <div class="w-fit h-fit mr-6">
+      <img src="../assets/pexels-scott-webb-1048035.jpg" width="300">
+    </div>
+
+    <div>
+      <h1>About Me</h1>
+      <div class="faded-rule-left w-full my-3"></div>
+      <p class="line-height-3 mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Felis bibendum ut tristique et egestas quis ipsum. Odio facilisis mauris sit amet massa vitae tortor.
+        Enim diam vulputate ut pharetra sit amet aliquam id diam. Eu scelerisque felis imperdiet proin fermentum leo vel
+        orci porta. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sagittis vitae et leo duis ut
+        diam quam nulla. Nulla aliquet enim tortor at auctor urna nunc id cursus. In fermentum posuere urna nec tincidunt
+        praesent semper. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Aliquet risus
+        feugiat in ante metus. Et netus et malesuada fames ac turpis egestas. Mauris cursus mattis molestie a iaculis.
+        Enim sed faucibus turpis in eu.
+      </p>
+      <p class="line-height-3">
+        Sapien pellentesque habitant morbi tristique senectus et netus. Purus in mollis nunc sed id semper risus in. Nec
+        tincidunt praesent semper feugiat nibh sed pulvinar proin. Tristique sollicitudin nibh sit amet. Arcu non sodales
+        neque sodales ut etiam sit amet nisl. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Lorem donec
+        massa sapien faucibus et molestie ac feugiat sed. Erat velit scelerisque in dictum non consectetur a erat nam.
+        Libero volutpat sed cras ornare arcu dui vivamus. Mauris sit amet massa vitae tortor. Habitasse platea dictumst
+        vestibulum rhoncus est pellentesque. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu.
+        Consectetur a erat nam at lectus urna. Aliquam malesuada bibendum arcu vitae. Dis parturient montes nascetur
+        ridiculus mus mauris vitae ultricies leo.
+      </p>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div id="professional-timeline">
+    <div class="justify-content-end">
+      <h1 class="text-right">Professional History</h1>
+      <div class="faded-rule-right w-full my-3"></div>
+    </div>
+
+    <p-timeline [value]="timelineEntries">
+      <ng-template pTemplate="content" let-entry>
+        <div class="my-2">
+          <p>{{ entry.details }}</p>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="marker" let-entry>
+          <span class="custom-marker shadow-2 mt-2">
+              <i [ngClass]="entry.icon"></i>
+          </span>
+      </ng-template>
+      <ng-template pTemplate="opposite" let-entry>
+        <div class="my-2">
+          <p>{{ entry.event.name }}</p>
+          <small class="p-text-secondary">{{ entry.event.date }}</small>
+        </div>
+      </ng-template>
+    </p-timeline>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div id="skills">
+    <h1>Stuff I've Worked With</h1>
+    <div class="faded-rule-left w-full my-3"></div>
+    <div class="flex justify-content-evenly">
+      <div class="w-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Felis bibendum ut tristique et egestas quis ipsum. Odio facilisis mauris sit amet massa vitae tortor.
+        Enim diam vulputate ut pharetra sit amet aliquam id diam. Eu scelerisque felis imperdiet proin fermentum leo vel
+        orci porta. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sagittis vitae et leo duis ut
+        diam quam nulla. Nulla aliquet enim tortor at auctor urna nunc id cursus. In fermentum posuere urna nec tincidunt
+        praesent semper.
+      </div>
+      <div class="w-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Felis bibendum ut tristique et egestas quis ipsum. Odio facilisis mauris sit amet massa vitae tortor.
+        Enim diam vulputate ut pharetra sit amet aliquam id diam. Eu scelerisque felis imperdiet proin fermentum leo vel
+        orci porta. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sagittis vitae et leo duis ut
+        diam quam nulla. Nulla aliquet enim tortor at auctor urna nunc id cursus. In fermentum posuere urna nec tincidunt
+        praesent semper.
+      </div>
+      <div class="w-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Felis bibendum ut tristique et egestas quis ipsum. Odio facilisis mauris sit amet massa vitae tortor.
+        Enim diam vulputate ut pharetra sit amet aliquam id diam. Eu scelerisque felis imperdiet proin fermentum leo vel
+        orci porta. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sagittis vitae et leo duis ut
+        diam quam nulla. Nulla aliquet enim tortor at auctor urna nunc id cursus. In fermentum posuere urna nec tincidunt
+        praesent semper.
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-xl"></div>
+
+  <div id="contact" class="w-full flex justify-content-center">
+    <div class="flex-col justify-content-center text-center">
+      <h1>Let's Chat!</h1>
+      <div class="mt-4">
+        <button pButton type="button" label="Contact Me" class="p-button-success"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-xl"></div>
+
+  <div id="footer" class="absolute py-4">
+    <p class="text-left">&copy; Anna Lamoureux, 2022</p>
+  </div>
+</div>
+

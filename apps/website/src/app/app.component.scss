@@ -1,0 +1,23 @@
+#container {
+  max-width: 1290px;
+}
+
+#headliner {
+  //margin: 18rem 0 16rem;
+
+  #headliner-text {
+    margin-left: 10%;
+  }
+
+  #headliner-gradient-box {
+    height: 400px;
+    background: rgb(23,33,47);
+    background: linear-gradient(20deg, rgba(23,33,47,1) 14%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 100%);
+    float: right;
+    margin-right: 10%;
+    margin-top: -450px;
+  }
+}
+
+
+

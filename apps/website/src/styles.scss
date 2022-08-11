@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #17212F;
+  color: #c1cfe1;
+
+  * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  .faded-rule-left {
+    background-image: linear-gradient(to right , #c1cfe1, #17212F 60%);
+    height: 1.3px;
+  }
+
+  .faded-rule-right {
+    background-image: linear-gradient(to left , #c1cfe1, #17212F 60%);
+    height: 1.3px;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .spacer-lg {
+    width: 100%;
+    height: 16rem;
+  }
+
+  .spacer-xl {
+    width: 100%;
+    height: 18rem;
+  }
+}
+
+.p-timeline-event-opposite {
+  min-width: 200px;
+  max-width: 20%;
+}
