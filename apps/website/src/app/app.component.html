@@ -1,9 +1,31 @@
 <div id="container" class="align-self-center px-4 pt-4 flex-col">
-<!-- Header -->
+  <!-- Header -->
   <div class="flex w-full justify-content-between vertical-align-middle">
     <h2 class="mt-2 font-light">Anna Lamoureux</h2>
     <div>
-      <button pButton type="button" label="Contact Me" class="p-button-outlined"></button>
+      <button
+        pButton
+        type="button"
+        label="Contact Me"
+        class="p-button-outlined"
+        (click)="scrollDownToContact()"
+      ></button>
+      <a
+        pButton
+        class="p-button-rounded p-button-text p-button-secondary ml-4"
+        icon="fa-brands fa-github"
+        href="https://github.com/anna-lamoureux"
+        target="_blank"
+      >
+      </a>
+      <a
+        pButton
+        class="p-button-rounded p-button-text p-button-success ml-2"
+        icon="fa-brands fa-linkedin-in"
+        href="https://www.linkedin.com/in/anna-lamoureux/"
+        target="_blank"
+      >
+      </a>
     </div>
   </div>
 
@@ -13,12 +35,13 @@
   <div id="headliner">
     <div id="headliner-text" class="w-7">
       <h2 class="font-light line-height-2 text-4xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Sit amet est placerat in egestas. Scelerisque in dictum non consectetur. In eu mi bibendum neque
-        egestas congue quisque egestas. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien.
+        I’m a software engineer by profession with a flair for the creative. I’m passionate about
+        writing clean, maintainable, performant code and designing friendly user interfaces. The
+        last few years, I’ve spent most of my time building frontends at The Jackson Laboratory for
+        researchers to access and interact with bioinformatic and genomic data.
       </h2>
     </div>
-    <div id="headliner-gradient-box" class="w-5 border-round"></div>
+    <div id="headliner-gradient-circle"></div>
   </div>
 
   <div class="spacer-lg"></div>
@@ -26,53 +49,97 @@
   <!-- About Section -->
   <div id="about" class="flex justify-content-between">
     <div class="w-fit h-fit mr-6">
-      <img src="../assets/pexels-scott-webb-1048035.jpg" width="300">
+      <img src="../assets/pexels-scott-webb-1048035.jpg" width="300" />
     </div>
 
     <div>
       <h1>About Me</h1>
       <div class="faded-rule-left w-full my-3"></div>
       <p class="line-height-3 mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Felis bibendum ut tristique et egestas quis ipsum. Odio facilisis mauris sit amet massa vitae tortor.
-        Enim diam vulputate ut pharetra sit amet aliquam id diam. Eu scelerisque felis imperdiet proin fermentum leo vel
-        orci porta. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sagittis vitae et leo duis ut
-        diam quam nulla. Nulla aliquet enim tortor at auctor urna nunc id cursus. In fermentum posuere urna nec tincidunt
-        praesent semper. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Aliquet risus
-        feugiat in ante metus. Et netus et malesuada fames ac turpis egestas. Mauris cursus mattis molestie a iaculis.
-        Enim sed faucibus turpis in eu.
+        Growing up in rural downeast Maine, I received my first MacBook through school in 7th grade
+        and, even back then, I was fiddling around with slideshow presentations, overdoing
+        transitions and effects, learning all of the OS shortcuts, and dabbling with programs like
+        SketchUp. Skip to my freshman year at a liberal arts college, I took a CS 101 learning basic
+        Python and I knew I wanted to go into software. I transferred to Moravian College (now
+        Moravian University) for the remainder of my undergrad as a Computer Science major. Some of
+        my Junior and Senior year elective courses including mobile computing, networking, and,
+        leaning into my creative talents, graphic design, typography and interactive design.
+      </p>
+      <p class="line-height-3 mb-4">
+        After graduation in 2017, I moved back home to Maine to search for a job and landed a
+        6-month internship at The Jackson Laboratory which landed me a full-time position as a
+        scientific software engineer. Within the first year there, I had started to become known as
+        the go-to frontend developer as I had the uncommon combination frontend development
+        expertise and designer-like intuition so my work stood out from the many web applications
+        where the frontends often felt like afterthoughts. I’d like to think that my Angular
+        development was a significant contributor to why our teams have adopted it officially as the
+        default web frontend framework and that my passion and dedication to making attractive and
+        functional UIs that developing for positive user experiences is just as important as
+        building a well-architected backend.
       </p>
       <p class="line-height-3">
-        Sapien pellentesque habitant morbi tristique senectus et netus. Purus in mollis nunc sed id semper risus in. Nec
-        tincidunt praesent semper feugiat nibh sed pulvinar proin. Tristique sollicitudin nibh sit amet. Arcu non sodales
-        neque sodales ut etiam sit amet nisl. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Lorem donec
-        massa sapien faucibus et molestie ac feugiat sed. Erat velit scelerisque in dictum non consectetur a erat nam.
-        Libero volutpat sed cras ornare arcu dui vivamus. Mauris sit amet massa vitae tortor. Habitasse platea dictumst
-        vestibulum rhoncus est pellentesque. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu.
-        Consectetur a erat nam at lectus urna. Aliquam malesuada bibendum arcu vitae. Dis parturient montes nascetur
-        ridiculus mus mauris vitae ultricies leo.
+        In my free time I enjoy cooking, reading, playing video games, occasionally dabbling in
+        small coding experiments, hanging out with my two cats and building custom keyboards.
       </p>
     </div>
   </div>
 
   <div class="spacer"></div>
 
-  <div id="professional-timeline">
+  <!-- Relevant Experience Section -->
+  <div id="relevant-experience">
     <div class="justify-content-end">
-      <h1 class="text-right">Professional History</h1>
+      <h1 class="text-right">Related Experience</h1>
       <div class="faded-rule-right w-full my-3"></div>
     </div>
 
     <p-timeline [value]="timelineEntries">
       <ng-template pTemplate="content" let-entry>
         <div class="my-2">
-          <p>{{ entry.details }}</p>
+          <h4 class="mb-1">{{ entry.event.role }}</h4>
+          <ul>
+            <li *ngFor="let point of entry.bulletPoints">{{ point }}</li>
+          </ul>
+          <div class="faded-rule-left my-2"></div>
+          <div class="flex flex-wrap justify-content-start w-full">
+            <div
+              *ngFor="let example of entry.examples"
+              class="mr-4"
+              [pTooltip]="example.disclaimer ? disclaimerMsg : ''"
+              tooltipPosition="bottom"
+            >
+              <div class="flex-col">
+                <h5>{{ example.label }}</h5>
+                <small class="p-text-secondary">{{ example.role }}</small>
+              </div>
+              <div>
+                <a
+                  *ngIf="example.github"
+                  pButton
+                  class="p-button-text"
+                  icon="fa-brands fa-github"
+                  [href]="example.github"
+                  target="_blank"
+                >
+                </a>
+                <a
+                  *ngIf="example.url"
+                  pButton
+                  class="p-button-text"
+                  icon="fa fa-arrow-up-right-from-square"
+                  [href]="example.url"
+                  target="_blank"
+                >
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </ng-template>
       <ng-template pTemplate="marker" let-entry>
-          <span class="custom-marker shadow-2 mt-2">
-              <i [ngClass]="entry.icon"></i>
-          </span>
+        <span class="custom-marker shadow-2 mt-2">
+          <i [ngClass]="entry.icon"></i>
+        </span>
       </ng-template>
       <ng-template pTemplate="opposite" let-entry>
         <div class="my-2">
@@ -85,33 +152,49 @@
 
   <div class="spacer"></div>
 
+  <!-- Skills Section -->
   <div id="skills">
-    <h1>Stuff I've Worked With</h1>
+    <h1>What I Use</h1>
     <div class="faded-rule-left w-full my-3"></div>
     <div class="flex justify-content-evenly">
       <div class="w-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Felis bibendum ut tristique et egestas quis ipsum. Odio facilisis mauris sit amet massa vitae tortor.
-        Enim diam vulputate ut pharetra sit amet aliquam id diam. Eu scelerisque felis imperdiet proin fermentum leo vel
-        orci porta. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sagittis vitae et leo duis ut
-        diam quam nulla. Nulla aliquet enim tortor at auctor urna nunc id cursus. In fermentum posuere urna nec tincidunt
-        praesent semper.
+        <h3>Comfortable/Fluent</h3>
+        <ul>
+          <li>Angular</li>
+          <li>Typescript</li>
+          <li>Javascript</li>
+          <li>Nx</li>
+          <li>Jest</li>
+          <li>ESLint</li>
+          <li>Unix Terminal</li>
+          <li>Webstorm</li>
+          <li>Figma</li>
+          <li>Bitbucket</li>
+          <li>JIRA</li>
+          <li>Confluence</li>
+          <li>Mac OS</li>
+        </ul>
       </div>
       <div class="w-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Felis bibendum ut tristique et egestas quis ipsum. Odio facilisis mauris sit amet massa vitae tortor.
-        Enim diam vulputate ut pharetra sit amet aliquam id diam. Eu scelerisque felis imperdiet proin fermentum leo vel
-        orci porta. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sagittis vitae et leo duis ut
-        diam quam nulla. Nulla aliquet enim tortor at auctor urna nunc id cursus. In fermentum posuere urna nec tincidunt
-        praesent semper.
+        <h3>Occasional Use</h3>
+        <ul>
+          <li>Python</li>
+          <li>D3</li>
+          <li>MongoDB</li>
+          <li>MySQL</li>
+          <li>Kubernetes</li>
+          <li>Google Cloud Platform</li>
+          <li>Jasmine</li>
+          <li>Karma</li>
+          <li>PyCharm</li>
+          <li>Sketch</li>
+          <li>Azure Devops</li>
+          <li>Github</li>
+          <li>Linux Boxes</li>
+        </ul>
       </div>
       <div class="w-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Felis bibendum ut tristique et egestas quis ipsum. Odio facilisis mauris sit amet massa vitae tortor.
-        Enim diam vulputate ut pharetra sit amet aliquam id diam. Eu scelerisque felis imperdiet proin fermentum leo vel
-        orci porta. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Sagittis vitae et leo duis ut
-        diam quam nulla. Nulla aliquet enim tortor at auctor urna nunc id cursus. In fermentum posuere urna nec tincidunt
-        praesent semper.
+        <img src="../assets/desk.jpg" class="max-w-full" />
       </div>
     </div>
   </div>
@@ -121,8 +204,24 @@
   <div id="contact" class="w-full flex justify-content-center">
     <div class="flex-col justify-content-center text-center">
       <h1>Let's Chat!</h1>
-      <div class="mt-4">
-        <button pButton type="button" label="Contact Me" class="p-button-success"></button>
+      <div class="mt-4"><img src="../assets/email.png" /></div>
+      <div class="flex row mt-2 justify-content-center">
+        <a
+          pButton
+          class="p-button-outlined p-button-rounded p-button-secondary mr-2"
+          icon="fa-brands fa-github"
+          href="https://github.com/anna-lamoureux"
+          target="_blank"
+        >
+        </a>
+        <a
+          pButton
+          class="p-button-outlined p-button-rounded p-button-success"
+          icon="fa-brands fa-linkedin-in"
+          href="https://www.linkedin.com/in/anna-lamoureux/"
+          target="_blank"
+        >
+        </a>
       </div>
     </div>
   </div>
@@ -130,7 +229,6 @@
   <div class="spacer-xl"></div>
 
   <div id="footer" class="absolute py-4">
-    <p class="text-left">&copy; Anna Lamoureux, 2022</p>
+    <p class="text-left">&copy; Anna Lamoureux, {{ year }}</p>
   </div>
 </div>
-

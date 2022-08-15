@@ -15,11 +15,12 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/website/src/favicon.ico", "apps/website/src/assets"],
         "styles": [
-          "node_modules/primeicons/primeicons.css",
-          "node_modules/primeng/resources/primeng.min.css",
-          "node_modules/primeflex/primeflex.css",
-          "node_modules/primeng/resources/themes/vela-blue/theme.css",
-          "apps/website/src/styles.scss"
+          "./node_modules/primeng/resources/themes/vela-blue/theme.css",
+          "./node_modules/primeicons/primeicons.css",
+          "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+          "./node_modules/primeng/resources/primeng.min.css",
+          "./node_modules/primeflex/primeflex.css",
+          "./apps/website/src/styles.scss"
         ],
         "scripts": []
       },
