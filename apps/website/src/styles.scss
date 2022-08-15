@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'theme.css';
+
+$gradient-dark: #40047c;
+$gradient-light: #07f29c;
+
+html,
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: var(--surface-ground);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    padding-inline-start: 1.2rem;
+  }
+
+  * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  .faded-rule-left {
+    background-image: linear-gradient(to right, var(--text-color), var(--surface-ground) 60%);
+    height: 1.3px;
+  }
+
+  .faded-rule-right {
+    background-image: linear-gradient(to left, var(--text-color), var(--surface-ground) 60%);
+    height: 1.3px;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .spacer-lg {
+    width: 100%;
+    height: 16rem;
+  }
+
+  .spacer-xl {
+    width: 100%;
+    height: 18rem;
+  }
+
+  #container {
+    max-width: 1290px;
+  }
+
+  #headliner-text {
+    margin-left: 10%;
+  }
+
+  #headliner-gradient-circle {
+    height: 450px;
+    width: 450px;
+    background: $gradient-dark;
+    background: linear-gradient(45deg, $gradient-dark 0%, $gradient-light 100%);
+    background: -moz-linear-gradient(45deg, $gradient-dark 0%, $gradient-light 100%);
+    background: -webkit-linear-gradient(45deg, $gradient-dark 0%, $gradient-light 100%);
+    float: right;
+    margin-right: 10%;
+    margin-top: -450px;
+    border-radius: 50%;
+  }
+
+  #skills img {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.p-timeline-event-opposite {
+  min-width: 200px;
+  max-width: 20%;
+}
+.custom-marker i {
+  width: 14px !important;
+}
