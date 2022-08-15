@@ -7,7 +7,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/website",
+        "outputPath": "docs",
         "index": "apps/website/src/index.html",
         "main": "apps/website/src/main.ts",
         "polyfills": "apps/website/src/polyfills.ts",
