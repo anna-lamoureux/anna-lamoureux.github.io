@@ -18,7 +18,8 @@ export class AppComponent {
         'Design and develop user interfaces for backend systems to allow users to interact, analyze and download genomic data using Javascript/HTML/CSS and Angular Typescript',
         'Work and collaborate across several teams working on applications with varying levels of overlap and integration levels',
         'Initiate and lead a UX/UI working group as a collaboration of individuals across the organization',
-        'Offer leadership and guidance to interns',
+        'Act as the go-to frontend developer for code and design reviews, application UI redesigns, and Angular questions',
+        'Offer guidance and leadership to interns whose work overlaps with my own',
       ],
       examples: [
         {
@@ -43,6 +44,11 @@ export class AppComponent {
           label: 'Study Intake Platform',
           role: 'Contributor',
           url: 'https://studyintake.jax.org/',
+        },
+        {
+          label: 'GenomeMUSter Search',
+          role: 'Primary Frontend Developer',
+          url: 'https://mpd.jax.org/',
         },
       ],
     },

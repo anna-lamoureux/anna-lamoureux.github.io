@@ -34,7 +34,7 @@
   <!-- Headliner Section -->
   <div id="headliner">
     <div id="headliner-text" class="w-7">
-      <h2 class="font-light line-height-2 text-4xl">
+      <h2 class="font-light line-height-2 text-2xl md:text-3xl lg:text-4xl">
         I’m a software engineer by profession with a flair for the creative. I’m passionate about
         writing clean, maintainable, performant code and designing friendly user interfaces. The
         last few years, I’ve spent most of my time building frontends at The Jackson Laboratory for
@@ -47,19 +47,19 @@
   <div class="spacer-lg"></div>
 
   <!-- About Section -->
-  <div id="about" class="flex flex-column md:flex-row justify-content-between">
-    <div id="profile" class="col-offset-1 w-10 md:col-offset-0 md:w-4 md:mr-6 mb-3">
-<!--      <img src="../assets/9Z5A1643-web.jpg" alt="Photo of me"/>-->
+  <div id="about" class="flex flex-column lg:flex-row justify-content-between">
+    <div id="profile" class="col-offset-1 w-10 md:w-8 md:col-offset-2 lg:col-offset-0 lg:w-4 lg:mr-6 mb-3 relative">
+      <small class="absolute top-100 right-0 mt-1">Photo courtesy of Miriam Bulcher Photography</small>
     </div>
 
-    <div class="w-full md:flex-1">
+    <div class="w-full lg:flex-1">
       <h1>About Me</h1>
       <div class="faded-rule-left w-full my-3"></div>
       <p class="line-height-3 mb-4">
         Growing up in rural downeast Maine, I received my first MacBook through school in 7th grade
-        and, even back then, I was fiddling around with slideshow presentations, overdoing
+        and, even back then, I was fiddling around with slideshow presentations, over-applying
         transitions and effects, learning all of the OS shortcuts, and dabbling with programs like
-        SketchUp. Skip to my freshman year at a liberal arts college, I took a CS 101 learning basic
+        SketchUp. Skip to my freshman year at a liberal arts college, I took a CS-101 learning basic
         Python and I knew I wanted to go into software. I transferred to Moravian College (now
         Moravian University) for the remainder of my undergrad as a Computer Science major. Some of
         my Junior and Senior year elective courses including mobile computing, networking, and,
@@ -77,10 +77,18 @@
         functional UIs that developing for positive user experiences is just as important as
         building a well-architected backend.
       </p>
+      <p class="line-height-3 mb-4">
+        Currently my workdays are spent applying bugfixes and developing new features for various frontends. One such
+        project has me redesigning and modernizing the UI for an application that has been a community resource since
+        the early 2000s that currently exists as a full-stack Python Flask with Jinja2 templating into a distributed
+        system with a more user-centered approach to UX. We're still early in the design phase, doing what we can to
+        gather user and stakeholder feedback.
+      </p>
       <p class="line-height-3">
-        In my free time I enjoy cooking, reading, playing video games, occasionally dabbling in
+        In my free time I enjoy cooking, reading, playing video games, occasionally playing around with
         small coding experiments, hanging out with my two cats and building custom keyboards.
       </p>
+
     </div>
   </div>
 
@@ -128,6 +136,15 @@
                   class="p-button-text"
                   icon="fa fa-arrow-up-right-from-square"
                   [href]="example.url"
+                  target="_blank"
+                >
+                </a>
+                <a
+                  *ngIf="example.publication"
+                  pButton
+                  class="p-button-text"
+                  icon="fa fa-book-open"
+                  [href]="example.publication"
                   target="_blank"
                 >
                 </a>
