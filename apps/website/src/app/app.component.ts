@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: [],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   timelineEntries: TimelineEntry[] = [
@@ -82,6 +82,39 @@ export class AppComponent {
         },
       ],
     },
+  ];
+
+  comfortable = [
+    'Angular',
+    'Typescript',
+    'Javascript',
+    'Nx',
+    'Jest',
+    'ESLint',
+    'Unix Terminal',
+    'Git',
+    'WebStorm',
+    'Figma',
+    'Bitbucket',
+    'Jira',
+    'Confluence',
+    'Mac OS',
+  ];
+
+  occasional = [
+    'D3',
+    'Python',
+    'MongoDB',
+    'MySQL',
+    'Kubernetes',
+    'Google Cloud Platform',
+    'Jasmine',
+    'Karma',
+    'PyCharm',
+    'Sketch',
+    'Azure Devops',
+    'Github',
+    'Linux Boxes',
   ];
 
   disclaimerMsg =
