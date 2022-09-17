@@ -71,7 +71,7 @@ export class AppComponent {
         {
           label: 'ICED',
           role: 'Interactive Design Course Assignment',
-          url: 'http://students.moravianinteractive.com/spring2017/stacl06/iced/',
+          url: 'https://students.moravianinteractive.com/spring2017/stacl06/iced/',
           disclaimer: true,
         },
         {
@@ -83,7 +83,7 @@ export class AppComponent {
         {
           label: 'Mortons Moo',
           role: 'Interactive Design Course Assignment',
-          url: 'http://students.moravianinteractive.com/spring2017/stacl06/mortons/',
+          url: 'https://students.moravianinteractive.com/spring2017/stacl06/mortons/',
           disclaimer: true,
         },
       ],
@@ -124,7 +124,7 @@ export class AppComponent {
   ];
 
   disclaimerMsg =
-    'This was a course assignment and is being shared as it was when submitted for grading back in 2016; please excuse display bugs!';
+    'This was a course assignment and is being shared as it was when submitted for grading back in 2016/17; please excuse display bugs!';
 
   get year(): number {
     return new Date().getFullYear();

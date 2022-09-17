@@ -1897,8 +1897,8 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 .p-buttonset.p-button-secondary > .p-button,
 .p-splitbutton.p-button-secondary > .p-button {
   color: #fff;
-  background: #a148f9;
-  border: 1px solid #a148f9;
+  background: #ae6bfa;
+  border: 1px solid #ae6bfa;
 }
 .p-button.p-button-secondary:enabled:hover,
 .p-buttonset.p-button-secondary > .p-button:enabled:hover,
@@ -1923,28 +1923,28 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 .p-buttonset.p-button-secondary > .p-button.p-button-outlined,
 .p-splitbutton.p-button-secondary > .p-button.p-button-outlined {
   background-color: transparent;
-  color: #a148f9;
+  color: #ae6bfa;
   border: 1px solid;
 }
 .p-button.p-button-secondary.p-button-outlined:enabled:hover,
 .p-buttonset.p-button-secondary > .p-button.p-button-outlined:enabled:hover,
 .p-splitbutton.p-button-secondary > .p-button.p-button-outlined:enabled:hover {
   background: rgba(161, 72, 249, 0.04);
-  color: #a148f9;
+  color: #ae6bfa;
   border: 1px solid;
 }
 .p-button.p-button-secondary.p-button-outlined:enabled:active,
 .p-buttonset.p-button-secondary > .p-button.p-button-outlined:enabled:active,
 .p-splitbutton.p-button-secondary > .p-button.p-button-outlined:enabled:active {
   background: rgba(161, 72, 249, 0.16);
-  color: #a148f9;
+  color: #ae6bfa;
   border: 1px solid;
 }
 .p-button.p-button-secondary.p-button-text,
 .p-buttonset.p-button-secondary > .p-button.p-button-text,
 .p-splitbutton.p-button-secondary > .p-button.p-button-text {
   background-color: transparent;
-  color: #a148f9;
+  color: #ae6bfa;
   border-color: transparent;
 }
 .p-button.p-button-secondary.p-button-text:enabled:hover,
@@ -1952,14 +1952,14 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 .p-splitbutton.p-button-secondary > .p-button.p-button-text:enabled:hover {
   background: rgba(161, 72, 249, 0.04);
   border-color: transparent;
-  color: #a148f9;
+  color: #ae6bfa;
 }
 .p-button.p-button-secondary.p-button-text:enabled:active,
 .p-buttonset.p-button-secondary > .p-button.p-button-text:enabled:active,
 .p-splitbutton.p-button-secondary > .p-button.p-button-text:enabled:active {
   background: rgba(161, 72, 249, 0.16);
   border-color: transparent;
-  color: #a148f9;
+  color: #ae6bfa;
 }
 .p-button.p-button-info,
 .p-buttonset.p-button-info > .p-button,
@@ -2471,24 +2471,24 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 }
 .p-splitbutton.p-button-secondary.p-button-outlined > .p-button {
   background-color: transparent;
-  color: #a148f9;
+  color: #ae6bfa;
   border: 1px solid;
 }
 .p-splitbutton.p-button-secondary.p-button-outlined > .p-button:enabled:hover,
 .p-splitbutton.p-button-secondary.p-button-outlined
   > .p-button:not(button):not(a):not(.p-disabled):hover {
   background: rgba(161, 72, 249, 0.04);
-  color: #a148f9;
+  color: #ae6bfa;
 }
 .p-splitbutton.p-button-secondary.p-button-outlined > .p-button:enabled:active,
 .p-splitbutton.p-button-secondary.p-button-outlined
   > .p-button:not(button):not(a):not(.p-disabled):active {
   background: rgba(161, 72, 249, 0.16);
-  color: #a148f9;
+  color: #ae6bfa;
 }
 .p-splitbutton.p-button-secondary.p-button-text > .p-button {
   background-color: transparent;
-  color: #a148f9;
+  color: #ae6bfa;
   border-color: transparent;
 }
 .p-splitbutton.p-button-secondary.p-button-text > .p-button:enabled:hover,
@@ -2496,14 +2496,14 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   > .p-button:not(button):not(a):not(.p-disabled):hover {
   background: rgba(161, 72, 249, 0.04);
   border-color: transparent;
-  color: #a148f9;
+  color: #ae6bfa;
 }
 .p-splitbutton.p-button-secondary.p-button-text > .p-button:enabled:active,
 .p-splitbutton.p-button-secondary.p-button-text
   > .p-button:not(button):not(a):not(.p-disabled):active {
   background: rgba(161, 72, 249, 0.16);
   border-color: transparent;
-  color: #a148f9;
+  color: #ae6bfa;
 }
 .p-splitbutton.p-button-info.p-button-outlined > .p-button {
   background-color: transparent;
@@ -6270,7 +6270,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   line-height: 1.5rem;
 }
 .p-badge.p-badge-secondary {
-  background-color: #a148f9;
+  background-color: #ae6bfa;
   color: #fff;
 }
 .p-badge.p-badge-success {

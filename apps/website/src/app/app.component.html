@@ -3,16 +3,23 @@
   <div class="flex w-full justify-content-between vertical-align-middle">
     <h2 class="mt-2 font-light">Anna Lamoureux</h2>
     <div>
+      <a
+        pButton
+        class="p-button-outlined p-button-rounded"
+        label="Resume"
+        href="../assets/lamoureux_resume.pdf"
+        target="_blank"
+      >
+      </a>
       <button
         pButton
-        type="button"
-        label="Contact Me"
-        class="p-button-outlined"
+        icon="fa fa-envelope"
+        class="p-button-rounded p-button-text p-button-plain ml-3"
         (click)="scrollDownToContact()"
       ></button>
       <a
         pButton
-        class="p-button-rounded p-button-text p-button-secondary ml-4"
+        class="p-button-rounded p-button-text p-button-secondary ml-2"
         icon="fa-brands fa-github"
         href="https://github.com/anna-lamoureux"
         target="_blank"
@@ -52,9 +59,9 @@
       id="profile"
       class="col-offset-1 w-10 md:w-8 md:col-offset-2 lg:col-offset-0 lg:w-4 lg:mr-6 mb-3 relative"
     >
-      <small class="absolute top-100 right-0 mt-1"
-        >Photo courtesy of Miriam Bulcher Photography</small
-      >
+      <small class="absolute top-100 right-0 mt-1">
+        Photo courtesy of Miriam Bulcher Photography
+      </small>
     </div>
 
     <div class="w-full lg:flex-1">
