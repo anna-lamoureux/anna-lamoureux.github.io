@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: [],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   timelineEntries: TimelineEntry[] = [
@@ -18,7 +18,8 @@ export class AppComponent {
         'Design and develop user interfaces for backend systems to allow users to interact, analyze and download genomic data using Javascript/HTML/CSS and Angular Typescript',
         'Work and collaborate across several teams working on applications with varying levels of overlap and integration levels',
         'Initiate and lead a UX/UI working group as a collaboration of individuals across the organization',
-        'Offer leadership and guidance to interns',
+        'Act as the go-to frontend developer for code and design reviews, application UI redesigns, and Angular questions',
+        'Offer guidance and leadership to interns whose work overlaps with my own',
       ],
       examples: [
         {
@@ -44,6 +45,11 @@ export class AppComponent {
           role: 'Contributor',
           url: 'https://studyintake.jax.org/',
         },
+        {
+          label: 'GenomeMUSter Search',
+          role: 'Primary Frontend Developer',
+          url: 'https://mpd.jax.org/',
+        },
       ],
     },
     {
@@ -65,7 +71,7 @@ export class AppComponent {
         {
           label: 'ICED',
           role: 'Interactive Design Course Assignment',
-          url: 'http://students.moravianinteractive.com/spring2017/stacl06/iced/',
+          url: 'https://students.moravianinteractive.com/spring2017/stacl06/iced/',
           disclaimer: true,
         },
         {
@@ -77,15 +83,48 @@ export class AppComponent {
         {
           label: 'Mortons Moo',
           role: 'Interactive Design Course Assignment',
-          url: 'http://students.moravianinteractive.com/spring2017/stacl06/mortons/',
+          url: 'https://students.moravianinteractive.com/spring2017/stacl06/mortons/',
           disclaimer: true,
         },
       ],
     },
   ];
 
+  comfortable = [
+    'Angular',
+    'Typescript',
+    'Javascript',
+    'Nx',
+    'Jest',
+    'ESLint',
+    'Unix Terminal',
+    'Git',
+    'WebStorm',
+    'Figma',
+    'Bitbucket',
+    'Jira',
+    'Confluence',
+    'Mac OS',
+  ];
+
+  occasional = [
+    'D3',
+    'Python',
+    'MongoDB',
+    'MySQL',
+    'Kubernetes',
+    'Google Cloud Platform',
+    'Jasmine',
+    'Karma',
+    'PyCharm',
+    'Sketch',
+    'Azure Devops',
+    'Github',
+    'Linux Boxes',
+  ];
+
   disclaimerMsg =
-    'This was a course assignment and is being shared as it was when submitted for grading back in 2016; please excuse display bugs!';
+    'This was a course assignment and is being shared as it was when submitted for grading back in 2016/17; please excuse display bugs!';
 
   get year(): number {
     return new Date().getFullYear();

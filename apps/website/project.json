@@ -15,7 +15,6 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/website/src/favicon.ico", "apps/website/src/assets"],
         "styles": [
-          "./node_modules/primeng/resources/themes/vela-blue/theme.css",
           "./node_modules/primeicons/primeicons.css",
           "./node_modules/@fortawesome/fontawesome-free/css/all.css",
           "./node_modules/primeng/resources/primeng.min.css",
