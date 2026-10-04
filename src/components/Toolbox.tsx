@@ -1,14 +1,23 @@
+import type { ToolGroup } from '../content';
 import './Toolbox.css';
 
-export function Toolbox({ groups }: { groups: { heading: string; text: string }[] }) {
+/** Skills by kind: a label on the left, current tools as chips, and a quieter note underneath. */
+export function Toolbox({ groups }: { groups: ToolGroup[] }) {
   return (
-    <div className="toolbox">
+    <dl className="toolbox">
       {groups.map((group) => (
-        <div key={group.heading}>
-          <b>{group.heading}</b>
-          {group.text}
+        <div key={group.heading} className="toolbox-row">
+          <dt>{group.heading}</dt>
+          <dd>
+            <ul>
+              {group.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            {group.note && <p>{group.note}</p>}
+          </dd>
         </div>
       ))}
-    </div>
+    </dl>
   );
 }

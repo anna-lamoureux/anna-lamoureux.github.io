@@ -17,14 +17,6 @@ export function App() {
       <main id="top">
         <Intro {...intro} />
 
-        <Section id="work" accent="blue" label="Work" heading="Some of what I've worked on">
-          <div className="card-grid">
-            {projects.map((project) => (
-              <WorkCard key={project.title} project={project} />
-            ))}
-          </div>
-        </Section>
-
         <Section id="about" accent="green" label={about.label} heading={about.heading}>
           <div className="prose">
             {about.paragraphs.map((text) => (
@@ -33,8 +25,16 @@ export function App() {
           </div>
         </Section>
 
-        <Section id="experience" accent="magenta" label="Experience" heading="Where I have been">
+        <Section id="experience" accent="magenta" label="Experience" heading="Where I've Been">
           <RoleList employers={experience} />
+        </Section>
+
+        <Section id="projects" accent="blue" label="Projects" heading="Some of what I've worked on">
+          <div className="card-grid">
+            {projects.map((project) => (
+              <WorkCard key={project.title} project={project} />
+            ))}
+          </div>
         </Section>
 
         <Section id="toolbox" accent="mauve" label="Toolbox" heading="What I use">

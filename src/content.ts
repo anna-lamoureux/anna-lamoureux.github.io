@@ -3,9 +3,9 @@
 export type Accent = 'blue' | 'mauve' | 'magenta' | 'peach' | 'green';
 
 export const nav: { label: string; href: string; accent: Accent }[] = [
-  { label: 'Work', href: '#work', accent: 'blue' },
   { label: 'About', href: '#about', accent: 'green' },
   { label: 'Experience', href: '#experience', accent: 'magenta' },
+  { label: 'Projects', href: '#projects', accent: 'blue' },
   { label: 'Contact', href: '#contact', accent: 'peach' },
 ];
 
@@ -24,9 +24,9 @@ export type Project = {
   meta: string;
   title: string;
   tagline: string;
-  /** Paragraphs shown in the bubble that opens on hover or focus. Leave out for no bubble. */
+  /** Paragraphs shown in the bubble that follows the cursor over the card. Leave out for no bubble. */
   more?: string[];
-  /** Links shown at the end of the bubble */
+  /** Links shown along the bottom of the card */
   links?: { label: string; href: string }[];
   /** Personal projects get a different caption colour */
   personal?: boolean;
@@ -103,8 +103,8 @@ export const projects: Project[] = [
       "I built the interface from scratch in Angular. The service is described in Genome Research (2024) and the database in Mammalian Genome (2023), and I'm a co-author on both.",
     ],
     links: [
-      { label: 'GenomeMUSter paper', href: 'https://genome.cshlp.org/content/34/1/145' },
-      { label: 'Database paper', href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10627943' },
+      { label: '2024 paper', href: 'https://genome.cshlp.org/content/34/1/145' },
+      { label: '2023 paper', href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10627943' },
     ],
   },
   {
@@ -176,20 +176,48 @@ export const experience: Employer[] = [
   },
 ];
 
-export const toolbox: { heading: string; text: string }[] = [
+export type ToolGroup = {
+  heading: string;
+  /** What I use now */
+  items: string[];
+  /** A quieter second line: things used less often, or in the past */
+  note?: string;
+};
+
+export const toolbox: ToolGroup[] = [
+  { heading: 'Languages', items: ['TypeScript', 'JavaScript', 'SQL', 'HTML', 'CSS'] },
   {
-    heading: 'Every day',
-    text: 'TypeScript, React, Node.js, PostgreSQL, Jest, Git, Claude Code, Jira',
+    heading: 'Frontend',
+    items: ['React', 'Redux', 'Storybook'],
+    note: 'Earlier in my career: five years of Angular and D3.',
   },
-  { heading: 'When the work calls for it', text: 'Elasticsearch, Playwright, OpenAPI, Storybook' },
   {
-    heading: 'How the work gets done',
-    text: 'Agile sprints, written implementation plans, prototyping, code review, feature flags, on-call',
+    heading: 'Backend and data',
+    items: ['Node.js', 'PostgreSQL', 'OpenAPI'],
+    note: 'Elasticsearch when the work calls for it.',
   },
-  { heading: 'Earlier in my career', text: 'Angular and D3, for five years of research software' },
+  { heading: 'Testing', items: ['Jest'], note: 'Playwright for end-to-end tests when needed.' },
+  {
+    heading: 'AI',
+    items: ['Claude Code'],
+    note: 'Every day, for building and for reviewing. I also build AI features into the product.',
+  },
+  {
+    heading: 'Ways of working',
+    items: [
+      'Agile sprints',
+      'Implementation plans',
+      'Prototyping',
+      'Code review',
+      'Feature flags',
+      'On-call',
+    ],
+    note: 'Jira and Git throughout.',
+  },
   {
     heading: 'Design',
-    text: "I studied graphic design and typography. These days I'm on the receiving end of Figma files more than I'm making them.",
+    items: ['Graphic design', 'Typography'],
+    note: "Studied both. These days I'm on the receiving end of Figma files more than I'm making them.",
   },
 ];
 
