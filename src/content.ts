@@ -20,80 +20,103 @@ export const intro = {
 };
 
 export type Project = {
-  /** Small caption above the title, e.g. where and when */
+  /** Small caption above the title: where and when */
   meta: string;
   title: string;
   tagline: string;
-  /** Paragraphs shown when the card is expanded */
-  more: string[];
-  /** Caption color; defaults to the section color */
-  accent?: Accent;
-  /** Optional link shown after the expanded text */
-  link?: { label: string; href: string };
+  /** Paragraphs shown in the bubble that opens on hover or focus. Leave out for no bubble. */
+  more?: string[];
+  /** Links shown at the end of the bubble */
+  links?: { label: string; href: string }[];
+  /** Personal projects get a different caption colour */
+  personal?: boolean;
 };
 
 export const projects: Project[] = [
   {
     meta: 'Vitally · 2026',
-    title: 'An unreleased AI feature',
+    title: 'Unreleased AI agent work',
     tagline:
-      "Scheduling and authoring tools for an AI feature that isn't public yet, built this year on a team of two.",
-    more: [
-      "I can't say much about what it does until it's announced, so this is only the engineering.",
-      'The product already had AI infrastructure for running prompts and tool calls. We built a scheduling layer on top of it. I also built a chat flow that fills in and updates a form for you: the model proposes changes, and the person stays in charge of saving them.',
-    ],
+      "This one isn't formally announced yet, and I won't be the one to leak it. My part in it is a conversation for an interview.",
   },
   {
     meta: 'Vitally · 2026',
     title: 'Automation run management',
     tagline:
-      'More control over automations already in flight, in a risky part of the codebase. The first project I ran on my own.',
+      'Gave users a way to stop an automation run in progress, or undo what a run had already done, without contacting support.',
     more: [
-      "The original spec had three actions: stop a run, undo a run (stop it if it's still going, then reverse whatever can be reversed), and re-enroll. Each was meant to come in a single and a bulk version. Not everything can be reversed. A task that was created or updated can be put back. An email that has gone out cannot.",
-      'What shipped was smaller: stop, undo, and bulk stop. Re-enroll and bulk undo were dropped because they were too risky for what they offered. Most of the work was backend, a good share of it refactoring, and very little of it shows in the interface.',
-      'What I took away was less about the feature and more about the process. This is a complicated area where almost any change carries risk, so a lot of the job was deciding what was safe to do at all.',
+      'Automations can change thousands of records, and a mistake used to mean a support ticket and manual data repair. This project added stop and undo for individual runs, and stop in bulk.',
+      "Not everything is reversible: a created task can be removed, but a sent email can't be unsent. Most of the work was backend, in an older part of the codebase where changes carry risk, so much of the effort went into refactoring safely and deciding what could be offered reliably.",
     ],
   },
   {
     meta: 'Vitally · 2025–2026',
-    title: 'A real draft system',
+    title: 'A more robust draft system',
     tagline:
-      'Moved drafts out of the browser and onto the server. I was part of the planning and took on half of the project.',
+      'Replaced browser-only drafts with drafts saved to the server, so unfinished work survives across devices and sessions.',
     more: [
-      "There were drafts before, technically. They were kept in the browser's local storage, which meant one draft per type of record, gone after 30 days, gone if you switched browsers or opened a private window, and overwritten if you started something new. You couldn't browse them or find them again.",
-      "The hard part of fixing that was that the product had only ever saved things once they were published and visible to everyone. Nothing in the database had ever been unfinished. We had to carefully introduce records that exist but don't count yet, and make sure the rest of the product treated them that way.",
+      "Drafts used to live in the browser's local storage: one per record type, expiring after 30 days, and lost when switching browsers or starting something new.",
+      'The product had only ever stored records once they were published. The project introduced saved but unpublished records and made sure search, reporting, automations and integrations ignored them. I was involved in the planning and built half of the record types.',
     ],
   },
   {
     meta: 'Vitally · 2024–2026',
     title: 'Widgets and dashboards',
     tagline:
-      'A long project with several threads: widget setup, dashboards, a shared widget library and per-customer dashboards.',
+      "A multi-part overhaul of how reporting widgets are configured, how dashboards present them, and how they're shared.",
     more: [
-      'The widget work began as a redesign of how widgets are configured. That sat on some very complicated code, so it was a reorganization as much as a redesign. The dashboard code and its presentation were updated separately. Throughout there was a lot of refactoring and cleanup, building to spec, and speaking up when something added more complexity than it was worth.',
-      "The widget library is the piece I'd point to. It made it much easier to share a useful widget with your team, or to reuse your own across several dashboards, than it had been before.",
+      'Widgets and dashboards had existed for years but were tedious to set up, confusing to configure, and sat on code that had grown unwieldy. A teammate and I updated them in stages: widget configuration first, then how widgets and dashboards are presented.',
+      "We then added scoped dashboards, where the widgets on a user, account or organization page show only that record's data, and a widget library that makes useful widgets easier to share and reuse.",
     ],
   },
   {
     meta: 'Vitally · 2023–2024',
-    title: 'Outcome tracking',
+    title: 'Goals: target tracking',
     tagline:
-      "A way to set a target for a customer, give it a deadline, and see at any point whether you're on course to hit it.",
+      'A way for teams to standardize the targets they manage accounts against, with live progress toward a deadline.',
     more: [
-      'The interesting part is tracking progress over time. You need to know where something started, where it is now, and where it ought to be by this point, and there are a lot of edge cases hiding in those three questions.',
-      'This was also the first time the company put a feature behind a paywall, so I handled that for the first time too.',
+      'Customers wanted to normalize their processes and target metrics across the accounts they manage.',
+      'A goal has a deadline and any number of conditions, measured manually or automatically, that must be met for it to count as achieved. Progress is tracked live as the deadline approaches.',
     ],
   },
   {
     meta: 'The Jackson Laboratory · 2017–2022',
-    title: 'Genome comparison browser',
+    title: 'JAX Synteny Browser',
     tagline:
-      'The Synteny Browser shows researchers which regions of the mouse and human genomes line up. I led the frontend.',
+      'An interactive browser for comparing the mouse and human genomes, used to find candidate genes for human disease.',
     more: [
-      "Along with the frontend, I led the move from one big application to separate services. It's also the reason my name is on a paper in Mammalian Genome.",
+      'A researcher studying a region of one genome can see the matching (syntenic) region in the other and highlight genes by function, phenotype or disease association. The published examples include narrowing down candidate genes for lung cancer susceptibility and type 2 diabetes.',
+      "I worked on its D3 visualizations, then rebuilt the application from an older JavaScript codebase into an Angular single-page app with a redesigned interface. It was published in Mammalian Genome in 2019, and I'm the second author.",
     ],
-    accent: 'magenta',
-    link: { label: 'Read the paper', href: 'https://doi.org/10.1007/s00335-019-09821-4' },
+    links: [
+      { label: 'Paper', href: 'https://doi.org/10.1007/s00335-019-09821-4' },
+      { label: 'Source', href: 'https://github.com/TheJacksonLaboratory/syntenybrowser' },
+    ],
+  },
+  {
+    meta: 'The Jackson Laboratory · 2017–2022',
+    title: 'GenomeMUSter',
+    tagline:
+      'A search interface for one of the largest collections of mouse genetic variation, part of the Mouse Phenome Database.',
+    more: [
+      'GenomeMUSter combines variant data for 657 mouse strains across more than 100 million sites. Researchers enter genomic regions and the strains they care about and get back a grid of variants, with imputed values shown or filtered by confidence.',
+      "I built the interface from scratch in Angular. The service is described in Genome Research (2024) and the database in Mammalian Genome (2023), and I'm a co-author on both.",
+    ],
+    links: [
+      { label: 'GenomeMUSter paper', href: 'https://genome.cshlp.org/content/34/1/145' },
+      { label: 'Database paper', href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10627943' },
+    ],
+  },
+  {
+    meta: 'The Jackson Laboratory · 2017–2022',
+    title: 'HaploQA',
+    tagline:
+      'An open-source tool for checking the genetic quality of laboratory mice from their genotyping data.',
+    more: [
+      "Labs upload data from standard mouse genotyping arrays, and HaploQA reconstructs each sample's haplotypes to show which founder strain each stretch of the genome came from.",
+      'I maintained the application, built and extended its D3 visualizations, and added support for a newer genotyping array.',
+    ],
+    links: [{ label: 'Source', href: 'https://github.com/TheJacksonLaboratory/haploqa' }],
   },
   {
     meta: 'Personal project · work in progress',
@@ -101,10 +124,10 @@ export const projects: Project[] = [
     tagline:
       'A self-hosted reference library for tabletop games that reads the rulebook PDFs you own and makes them searchable.',
     more: [
-      "You bring your own PDFs (spells, creatures, items, rules) and it pulls out structured entries you can search, each with its source and page number. It runs on your own hardware. There's no marketplace, no buying books a second time, and no telemetry. Dungeons & Dragons 5e comes first, though it's built to handle other systems.",
-      "It's a React and Node app with MongoDB, a search engine, and a small service that does the AI extraction, all in Docker. I design it and make the calls. Most of the code is written by AI coding agents working to my specs, which has been an education of its own.",
+      'You bring your own PDFs (spells, creatures, items, rules) and it extracts structured, searchable entries, each with its source and page number. It runs on your own hardware, with no marketplace and no telemetry. Dungeons & Dragons 5e comes first.',
+      'It is a React and Node app with MongoDB, a search engine, and a small service for the AI extraction, all in Docker. I design it and make the decisions, and AI coding agents write most of the code to my specs.',
     ],
-    accent: 'mauve',
+    personal: true,
   },
 ];
 
