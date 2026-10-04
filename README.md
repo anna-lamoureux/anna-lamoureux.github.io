@@ -1,7 +1,11 @@
-# My Github.io Page
+# anna-lamoureux.github.io
 
-Listen, did I need to make a static website as an Angular application? Absolutely not, especially one as simple as this.
-However, these days I'm doing most of my professional work with Angular and Typescript, so I figured it would make the
-most sense to write it this way.
+My personal site. Version 3 is plain HTML and CSS with no build step.
 
-### Feel free to peruse the source at your leisure :)
+- `docs/index.html` is the page.
+- `docs/styles.css` is the styling. Colours and fonts are variables at the top.
+- GitHub Pages serves the `docs/` folder.
+
+To preview, open `docs/index.html` in a browser.
+
+Earlier versions (an Angular app) are in the history of `master` and on the `2.0` branch.

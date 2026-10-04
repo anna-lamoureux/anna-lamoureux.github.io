@@ -1,12 +1,308 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Anna Lamoureux is a senior product engineer working full-stack in TypeScript, React, Node.js and PostgreSQL, with a background in design."
+    />
     <title>Anna Lamoureux</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>:root{--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}@font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:block;src:url(fa-brands-400.86c7e1fa6eef39e5.woff2) format("woff2"),url(fa-brands-400.f5defc2e23074ea1.ttf) format("truetype")}:root{--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:block;src:url(fa-regular-400.e05509127408c2d4.woff2) format("woff2"),url(fa-regular-400.3edb900415298558.ttf) format("truetype")}:root{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:block;src:url(fa-solid-900.64d5644d62aa832c.woff2) format("woff2"),url(fa-solid-900.f418d876aec0af1a.ttf) format("truetype")}:root{--surface-a:#1f2d40;--surface-b:#17212f;--surface-c:#293647;--surface-d:#304562;--surface-e:#1f2d40;--surface-f:#1f2d40;--text-color:#e6e6e6;--text-color-secondary:#b3b3b3;--primary-color:#64b5f6;--primary-color-text:#16212f;--font-family:Lato, Helvetica, sans-serif;--surface-0:#17212f;--surface-50:#2e3744;--surface-100:#454d59;--surface-200:#5d646d;--surface-300:#747a82;--surface-400:#8b9097;--surface-500:#a2a6ac;--surface-600:#b9bcc1;--surface-700:#d1d3d5;--surface-800:#e8e9ea;--surface-900:#ffffff;--gray-50:#e8e9ea;--gray-100:#d1d3d5;--gray-200:#b9bcc1;--gray-300:#a2a6ac;--gray-400:#8b9097;--gray-500:#747a82;--gray-600:#5d646d;--gray-700:#454d59;--gray-800:#2e3744;--gray-900:#17212f;--content-padding:1rem;--inline-spacing:.5rem;--border-radius:3px;--surface-ground:#17212f;--surface-section:#17212f;--surface-card:#1f2d40;--surface-overlay:#1f2d40;--surface-border:#304562;--surface-hover:rgba(255, 255, 255, .03);--maskbg:rgba(0, 0, 0, .4);--focus-ring:0 0 0 1px #93cbf9;color-scheme:light dark}*{box-sizing:border-box}:root{--blue-50:#f4fafe;--blue-100:#cae6fc;--blue-200:#a0d2fa;--blue-300:#75bef8;--blue-400:#4baaf5;--blue-500:#2196f3;--blue-600:#1c80cf;--blue-700:#1769aa;--blue-800:#125386;--blue-900:#0d3c61;--green-50:#f6fbf6;--green-100:#d4ecd5;--green-200:#b2ddb4;--green-300:#90cd93;--green-400:#6ebe71;--green-500:#4caf50;--green-600:#419544;--green-700:#357b38;--green-800:#2a602c;--green-900:#1e4620;--yellow-50:#fffcf5;--yellow-100:#fef0cd;--yellow-200:#fde4a5;--yellow-300:#fdd87d;--yellow-400:#fccc55;--yellow-500:#fbc02d;--yellow-600:#d5a326;--yellow-700:#b08620;--yellow-800:#8a6a19;--yellow-900:#644d12;--cyan-50:#f2fcfd;--cyan-100:#c2eff5;--cyan-200:#91e2ed;--cyan-300:#61d5e4;--cyan-400:#30c9dc;--cyan-500:#00bcd4;--cyan-600:#00a0b4;--cyan-700:#008494;--cyan-800:#006775;--cyan-900:#004b55;--pink-50:#fef4f7;--pink-100:#fac9da;--pink-200:#f69ebc;--pink-300:#f1749e;--pink-400:#ed4981;--pink-500:#e91e63;--pink-600:#c61a54;--pink-700:#a31545;--pink-800:#801136;--pink-900:#5d0c28;--indigo-50:#f5f6fb;--indigo-100:#d1d5ed;--indigo-200:#acb4df;--indigo-300:#8893d1;--indigo-400:#6372c3;--indigo-500:#3f51b5;--indigo-600:#36459a;--indigo-700:#2c397f;--indigo-800:#232d64;--indigo-900:#192048;--teal-50:#f2faf9;--teal-100:#c2e6e2;--teal-200:#91d2cc;--teal-300:#61beb5;--teal-400:#30aa9f;--teal-500:#009688;--teal-600:#008074;--teal-700:#00695f;--teal-800:#00534b;--teal-900:#003c36;--orange-50:#fff8f2;--orange-100:#fde0c2;--orange-200:#fbc791;--orange-300:#f9ae61;--orange-400:#f79530;--orange-500:#f57c00;--orange-600:#d06900;--orange-700:#ac5700;--orange-800:#874400;--orange-900:#623200;--bluegray-50:#f7f9f9;--bluegray-100:#d9e0e3;--bluegray-200:#bbc7cd;--bluegray-300:#9caeb7;--bluegray-400:#7e96a1;--bluegray-500:#607d8b;--bluegray-600:#526a76;--bluegray-700:#435861;--bluegray-800:#35454c;--bluegray-900:#263238;--purple-50:#faf4fb;--purple-100:#e7cbec;--purple-200:#d4a2dd;--purple-300:#c279ce;--purple-400:#af50bf;--purple-500:#9c27b0;--purple-600:#852196;--purple-700:#6d1b7b;--purple-800:#561561;--purple-900:#3e1046;--red-50:#fff5f5;--red-100:#ffd1ce;--red-200:#ffada7;--red-300:#ff8980;--red-400:#ff6459;--red-500:#ff4032;--red-600:#d9362b;--red-700:#b32d23;--red-800:#8c231c;--red-900:#661a14;--primary-50:#f7fbff;--primary-100:#daedfd;--primary-200:#bcdffb;--primary-300:#9fd1f9;--primary-400:#81c3f8;--primary-500:#64b5f6;--primary-600:#559ad1;--primary-700:#467fac;--primary-800:#376487;--primary-900:#284862}html,body{font-family:Lato,Helvetica,sans-serif;font-size:14px;background-color:var(--surface-ground);color:var(--text-color);display:flex;justify-content:center}html *,body *{margin-block-start:0;margin-block-end:0}</style><link rel="stylesheet" href="styles.ca0cce27567c0a2b.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.ca0cce27567c0a2b.css"></noscript></head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Geist:wght@400;500;600&family=PT+Mono&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
   <body>
-    <app-root></app-root>
-  <script src="runtime.eb5339411b39c9f1.js" type="module"></script><script src="polyfills.8fbfd271b3dca422.js" type="module"></script><script src="main.8893ad7c22e67d90.js" type="module"></script>
+    <div class="page">
+      <header class="topbar">
+        <a class="name" href="#top">Anna Lamoureux</a>
+        <nav aria-label="Sections">
+          <a href="#work" class="c-blue">Work</a>
+          <a href="#how" class="c-green">About</a>
+          <a href="#experience" class="c-magenta">Experience</a>
+          <a href="#contact" class="c-peach">Contact</a>
+        </nav>
+      </header>
 
-</body></html>
+      <main id="top">
+        <div class="hero">
+          <div>
+            <span class="label">Product engineer · Haverhill, Massachusetts</span>
+            <h1>I build the parts of software people <em>look at all day.</em></h1>
+          </div>
+          <p>
+            Most of what I've built is the stuff people have open at work from nine to five: dashboards,
+            editors, automation tools and, more recently, AI agents. I work across the stack (TypeScript,
+            React, Node, Postgres). I also studied design along with computer science, which is probably why I
+            can't leave a confusing screen alone.
+          </p>
+          <p>
+            I've been at Vitally, a customer-success platform, since 2023. Before that I spent five years at
+            The Jackson Laboratory building tools for genomics researchers.
+          </p>
+          <div class="links">
+            <a class="btn c-blue" href="mailto:anna.lamoureux@gmail.com">email</a>
+            <a class="btn c-mauve" href="https://github.com/anna-lamoureux">github</a>
+            <a class="btn c-magenta" href="https://linkedin.com/in/anna-lamoureux">linkedin</a>
+          </div>
+        </div>
+
+        <section id="work">
+          <span class="label">Work</span>
+          <h2>Some of what I've worked on</h2>
+          <div class="cards">
+            <article class="card">
+              <span class="meta">Vitally · 2026</span>
+              <h3>Agents on a schedule</h3>
+              <p>
+                A scheduling system, built on a team of two, for AI automations that work for and with people
+                in the background.
+              </p>
+              <details>
+                <summary>More</summary>
+                <p>
+                  The product already had AI infrastructure for running prompts and tool calls. We built the
+                  scheduling layer on top of it: you write instructions, pick when they should run, and the
+                  agent does the work on that schedule and leaves the results for you to review.
+                </p>
+                <p>
+                  I also built the part that lets people use the same AI chat to create and update their
+                  agents, so nobody has to start from a blank form each time.
+                </p>
+              </details>
+            </article>
+            <article class="card">
+              <span class="meta">Vitally · 2026</span>
+              <h3>Automation run management</h3>
+              <p>
+                More control over automations already in flight, in a risky part of the codebase. The first
+                project I ran on my own.
+              </p>
+              <details>
+                <summary>More</summary>
+                <p>
+                  The original spec had three actions: stop a run, undo a run (stop it if it's still going,
+                  then reverse whatever can be reversed), and re-enroll. Each was meant to come in a single
+                  and a bulk version. Not everything can be reversed. A task that was created or updated can
+                  be put back. An email that has gone out cannot.
+                </p>
+                <p>
+                  What shipped was smaller: stop, undo, and bulk stop. Re-enroll and bulk undo were dropped
+                  because they were too risky for what they offered. Most of the work was backend, a good
+                  share of it refactoring, and very little of it shows in the interface.
+                </p>
+                <p>
+                  What I took away was less about the feature and more about the process. This is a
+                  complicated area where almost any change carries risk, so a lot of the job was deciding what
+                  was safe to do at all.
+                </p>
+              </details>
+            </article>
+            <article class="card">
+              <span class="meta">Vitally · 2025–2026</span>
+              <h3>A real draft system</h3>
+              <p>
+                Moved drafts out of the browser and onto the server. I was part of the planning and took on
+                half of the project.
+              </p>
+              <details>
+                <summary>More</summary>
+                <p>
+                  There were drafts before, technically. They were kept in the browser's local storage, which
+                  meant one draft per type of record, gone after 30 days, gone if you switched browsers or
+                  opened a private window, and overwritten if you started something new. You couldn't browse
+                  them or find them again.
+                </p>
+                <p>
+                  The hard part of fixing that was that the product had only ever saved things once they were
+                  published and visible to everyone. Nothing in the database had ever been unfinished. We had
+                  to carefully introduce records that exist but don't count yet, and make sure the rest of the
+                  product treated them that way.
+                </p>
+              </details>
+            </article>
+            <article class="card">
+              <span class="meta">Vitally · 2024–2026</span>
+              <h3>Widgets and dashboards</h3>
+              <p>
+                A long project with several threads: widget setup, dashboards, a shared widget library and
+                per-customer dashboards.
+              </p>
+              <details>
+                <summary>More</summary>
+                <p>
+                  The widget work began as a redesign of how widgets are configured. That sat on some very
+                  complicated code, so it was a reorganization as much as a redesign. The dashboard code and
+                  its presentation were updated separately. Throughout there was a lot of refactoring and
+                  cleanup, building to spec, and speaking up when something added more complexity than it was
+                  worth.
+                </p>
+                <p>
+                  The widget library is the piece I'd point to. It made it much easier to share a useful
+                  widget with your team, or to reuse your own across several dashboards, than it had been
+                  before.
+                </p>
+              </details>
+            </article>
+            <article class="card">
+              <span class="meta">Vitally · 2023–2024</span>
+              <h3>Outcome tracking</h3>
+              <p>
+                A way to set a target for a customer, give it a deadline, and see at any point whether you're
+                on course to hit it.
+              </p>
+              <details>
+                <summary>More</summary>
+                <p>
+                  The interesting part is tracking progress over time. You need to know where something
+                  started, where it is now, and where it ought to be by this point, and there are a lot of
+                  edge cases hiding in those three questions.
+                </p>
+                <p>
+                  This was also the first time the company put a feature behind a paywall, so I handled that
+                  for the first time too.
+                </p>
+              </details>
+            </article>
+            <article class="card jax">
+              <span class="meta">The Jackson Laboratory · 2017–2022</span>
+              <h3>Genome comparison browser</h3>
+              <p>
+                The Synteny Browser shows researchers which regions of the mouse and human genomes line up. I
+                led the frontend.
+              </p>
+              <details>
+                <summary>More</summary>
+                <p>
+                  Along with the frontend, I led the move from one big application to separate services. It's
+                  also the reason my name is on a paper in
+                  <a href="https://doi.org/10.1007/s00335-019-09821-4">Mammalian Genome</a>.
+                </p>
+              </details>
+            </article>
+            <article class="card own">
+              <span class="meta">Personal project · work in progress</span>
+              <h3>Curio</h3>
+              <p>
+                A self-hosted reference library for tabletop games that reads the rulebook PDFs you own and
+                makes them searchable.
+              </p>
+              <details>
+                <summary>More</summary>
+                <p>
+                  You bring your own PDFs (spells, creatures, items, rules) and it pulls out structured
+                  entries you can search, each with its source and page number. It runs on your own hardware.
+                  There's no marketplace, no buying books a second time, and no telemetry. Dungeons &amp;
+                  Dragons 5e comes first, though it's built to handle other systems.
+                </p>
+                <p>
+                  It's a React and Node app with MongoDB, a search engine, and a small service that does the
+                  AI extraction, all in Docker. I design it and make the calls. Most of the code is written by
+                  AI coding agents working to my specs, which has been an education of its own.
+                </p>
+              </details>
+            </article>
+          </div>
+        </section>
+
+        <section id="how" class="c-green">
+          <span class="label">About</span>
+          <h2>Who I am</h2>
+          <p class="pub">
+            I like knowing why something is being built before I build it, and I'll say so when a spec is
+            going to confuse the people who have to use it. Sometimes the right fix is to take a feature out.
+          </p>
+          <p class="pub">
+            I write things down. That means a plan before a big project, and a proper write-up when something
+            breaks, including the times it was my change that broke it.
+          </p>
+          <p class="pub">
+            I use AI coding tools every day now. They're useful, and they're confidently wrong often enough
+            that I review their work the way I'd review anyone else's.
+          </p>
+          <p class="pub">
+            I like helping people learn, when they ask. Lately that has meant tutoring someone through an
+            accelerated Python course, mostly the fundamentals, and showing a friend how to use Claude and
+            Claude Code to automate parts of their work. At Vitally I was the first point of contact for a new
+            engineer during his first couple of weeks.
+          </p>
+          <p class="pub">
+            Away from the computer I play D&amp;D, 3D print small fixes for things around the apartment, read,
+            and keep a cat named Inigo company.
+          </p>
+        </section>
+
+        <section id="experience" class="c-magenta">
+          <span class="label">Experience</span>
+          <h2>Where I have been</h2>
+          <ul class="roles">
+            <li>
+              <span class="when">2023 – now</span>
+              <div>
+                <h3>Vitally</h3>
+                <ol class="steps">
+                  <li><b>Senior Product Engineer II</b> <span>Aug 2026 – now</span></li>
+                  <li><b>Senior Software Engineer I</b> <span>Jun 2024 – Jul 2026</span></li>
+                  <li><b>Software Engineer</b> <span>Jan 2023 – Jun 2024</span></li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <span class="when">2017 – 2022</span>
+              <div>
+                <h3>The Jackson Laboratory</h3>
+                <ol class="steps">
+                  <li><b>Scientific Software Engineer</b> <span>Apr 2021 – Dec 2022</span></li>
+                  <li><b>Associate Scientific Software Engineer</b> <span>Feb 2018 – Apr 2021</span></li>
+                  <li><b>Computational Science Co-Op Associate</b> <span>Aug 2017 – Feb 2018</span></li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <span class="when">Education</span>
+              <div>
+                <h3>Moravian College</h3>
+                <p>B.S. Computer Science, minor in Mathematics.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="skills" class="c-mauve">
+          <span class="label">Toolbox</span>
+          <h2>What I use</h2>
+          <div class="skills">
+            <div><b>Every day</b>TypeScript, React, Node.js, PostgreSQL, Jest, Git, Claude Code, Jira</div>
+            <div><b>When the work calls for it</b>Elasticsearch, Playwright, OpenAPI, Storybook</div>
+            <div>
+              <b>How the work gets done</b>Agile sprints, written implementation plans, prototyping, code
+              review, feature flags, on-call
+            </div>
+            <div><b>Earlier in my career</b>Angular and D3, for five years of research software</div>
+            <div>
+              <b>Design</b>I studied graphic design and typography. These days I'm on the receiving end of
+              Figma files more than I'm making them.
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="c-peach">
+          <span class="label">Contact</span>
+          <h2>Say hello</h2>
+          <p class="pub">
+            Email is best: <a href="mailto:anna.lamoureux@gmail.com">anna.lamoureux@gmail.com</a>. I am also
+            on <a href="https://linkedin.com/in/anna-lamoureux">LinkedIn</a> and
+            <a href="https://github.com/anna-lamoureux">GitHub</a>.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <span>Anna Lamoureux</span>
+      </footer>
+    </div>
+  </body>
+</html>
