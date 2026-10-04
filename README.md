@@ -13,7 +13,7 @@ npm run build    # type-checks, then builds to dist/
 - `index.html` is the page shell and loads the fonts.
 - `src/content.ts` holds all of the text on the site.
 - `src/components/` has one file per piece of the page, each with its own stylesheet.
-- `src/styles/tokens.css` has the colours (light and dark) and fonts as CSS variables.
+- `src/styles/tokens.css` has the colors (light and dark) and fonts as CSS variables.
 - `src/styles/global.css` has the page-wide styles.
 
 ## Deploying

@@ -9,7 +9,7 @@ type Props = {
   children: ReactNode;
 };
 
-/** A titled block of the page with a coloured caption above its heading. */
+/** A titled block of the page with a colored caption above its heading. */
 export function Section({ id, accent, label, heading, children }: Props) {
   return (
     <section id={id} className={`section c-${accent}`}>

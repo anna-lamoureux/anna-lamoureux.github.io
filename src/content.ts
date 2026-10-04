@@ -26,7 +26,7 @@ export type Project = {
   tagline: string;
   /** Paragraphs shown when the card is expanded */
   more: string[];
-  /** Caption colour; defaults to the section colour */
+  /** Caption color; defaults to the section color */
   accent?: Accent;
   /** Optional link shown after the expanded text */
   link?: { label: string; href: string };
@@ -35,12 +35,12 @@ export type Project = {
 export const projects: Project[] = [
   {
     meta: 'Vitally · 2026',
-    title: 'Agents on a schedule',
+    title: 'An unreleased AI feature',
     tagline:
-      'A scheduling system, built on a team of two, for AI automations that work for and with people in the background.',
+      "Scheduling and authoring tools for an AI feature that isn't public yet, built this year on a team of two.",
     more: [
-      'The product already had AI infrastructure for running prompts and tool calls. We built the scheduling layer on top of it: you write instructions, pick when they should run, and the agent does the work on that schedule and leaves the results for you to review.',
-      'I also built the part that lets people use the same AI chat to create and update their agents, so nobody has to start from a blank form each time.',
+      "I can't say much about what it does until it's announced, so this is only the engineering.",
+      'The product already had AI infrastructure for running prompts and tool calls. We built a scheduling layer on top of it. I also built a chat flow that fills in and updates a form for you: the model proposes changes, and the person stays in charge of saving them.',
     ],
   },
   {

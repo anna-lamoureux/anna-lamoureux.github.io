@@ -8,7 +8,7 @@ type Props = {
   children: ReactNode;
 };
 
-/** A link styled as a square tile with a coloured offset shadow. */
+/** A link styled as a square tile with a colored offset shadow. */
 export function LinkButton({ href, accent, children }: Props) {
   return (
     <a className={`link-button c-${accent}`} href={href}>

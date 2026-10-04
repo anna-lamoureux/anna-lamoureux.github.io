@@ -23,7 +23,7 @@
   }
 }
 
-/* Dates use a muted mix of the section colour. */
+/* Dates use a muted mix of the section color. */
 .role-list-years,
 .role-list-roles span {
   font-family: var(--mono);

@@ -1,4 +1,4 @@
-/* Colours and fonts. Light is the default; dark applies when <html data-theme="dark">. */
+/* colors and fonts. Light is the default; dark applies when <html data-theme="dark">. */
 :root {
   color-scheme: light;
 
@@ -39,7 +39,7 @@
   --green: #5fdc97;
 }
 
-/* Put one of these on a section, link or button to set its accent colour. */
+/* Put one of these on a section, link or button to set its accent color. */
 .c-blue {
   --c: var(--blue);
 }
