@@ -19,7 +19,7 @@ function MoonIcon() {
   );
 }
 
-/** Switches between light and dark and remembers the choice. Shows the theme you'd switch to. */
+/** Switches between light and dark and remembers the choice. Shows the current theme. */
 export function ThemeToggle() {
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const next: Theme = theme === 'light' ? 'dark' : 'light';
@@ -38,7 +38,7 @@ export function ThemeToggle() {
       aria-label={`Switch to ${next} theme`}
       title={`Switch to ${next} theme`}
     >
-      {next === 'dark' ? <MoonIcon /> : <SunIcon />}
+      {theme === 'light' ? <SunIcon /> : <MoonIcon />}
     </button>
   );
 }

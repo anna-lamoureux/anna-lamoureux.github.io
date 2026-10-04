@@ -27,7 +27,8 @@
   color: var(--c);
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
+  /* Top padding matches the underline's space so the text stays centred in the header. */
+  padding: 4px 0 2px;
 }
 
 .header-link:hover {
