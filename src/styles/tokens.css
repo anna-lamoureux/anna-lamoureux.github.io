@@ -1,0 +1,57 @@
+/* Colours and fonts. Light is the default; dark applies when <html data-theme="dark">. */
+:root {
+  color-scheme: light;
+
+  --base: #eff1f5;
+  --surface: #ffffff;
+  --line: #ccd0da;
+  --text: #4c4f69;
+  --strong: #2f3147;
+  --muted: #6c6f85;
+
+  /* accents */
+  --blue: #1c8cf5;
+  --mauve: #7a35d6;
+  --magenta: #c8149a;
+  --peach: #c9500c;
+  --green: #12a150;
+
+  --pixel: 'Geist Pixel', 'Geist Mono', monospace;
+  --sans: 'Geist', 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'Geist Mono', 'SF Mono', Menlo, monospace;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --base: #1e1e2e;
+  --surface: #27273a;
+  --line: #3b3c52;
+  --text: #cdd6f4;
+  --strong: #eef1fc;
+  --muted: #a6adc8;
+
+  /* accents */
+  --blue: #6cb8ff;
+  --mauve: #c4a1f9;
+  --magenta: #f77bd0;
+  --peach: #fab387;
+  --green: #5fdc97;
+}
+
+/* Put one of these on a section, link or button to set its accent colour. */
+.c-blue {
+  --c: var(--blue);
+}
+.c-mauve {
+  --c: var(--mauve);
+}
+.c-magenta {
+  --c: var(--magenta);
+}
+.c-peach {
+  --c: var(--peach);
+}
+.c-green {
+  --c: var(--green);
+}

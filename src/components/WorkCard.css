@@ -1,0 +1,53 @@
+.work-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 20px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.work-card:hover {
+  border-color: var(--c);
+}
+
+.work-card-meta {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--c);
+}
+
+/* Titles stay on one line so every collapsed card is the same height. */
+.work-card h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--blue);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work-card p {
+  margin: 0;
+  font-size: 15.5px;
+}
+
+/* Room for four lines, for the same reason. */
+.work-card-tagline {
+  min-height: calc(1.6em * 4);
+}
+
+.work-card summary {
+  width: max-content;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--c);
+}
+
+.work-card details p {
+  margin-top: 10px;
+}
