@@ -185,39 +185,52 @@ export type ToolGroup = {
 };
 
 export const toolbox: ToolGroup[] = [
-  { heading: 'Languages', items: ['TypeScript', 'JavaScript', 'SQL', 'HTML', 'CSS'] },
+  { heading: 'Languages', items: ['TypeScript', 'JavaScript', 'SQL', 'HTML', '(S)CSS'] },
   {
     heading: 'Frontend',
-    items: ['React', 'Redux', 'Storybook'],
-    note: 'Earlier in my career: five years of Angular and D3.',
+    items: ['React', 'Redux', 'Storybook', 'Ducks', 'React-Aria', 'Ant Design'],
+    note: 'Earlier in my career: five years of Angular, Material Design and D3.',
   },
   {
     heading: 'Backend and data',
-    items: ['Node.js', 'PostgreSQL', 'OpenAPI'],
-    note: 'Elasticsearch when the work calls for it.',
+    items: [
+      'Node.js',
+      'Express',
+      'OpenAPI',
+      'Zod',
+      'PostgreSQL',
+      'Elasticsearch',
+      'Migrations',
+      'Recurring and tech request jobs',
+    ],
+    note: 'Postgres schema changes including tables, enums, triggers, constraints, validations, foreign keys, indexes, etc.',
   },
-  { heading: 'Testing', items: ['Jest'], note: 'Playwright for end-to-end tests when needed.' },
+  { heading: 'Testing', items: ['Jest', 'React Testing Library', 'Playwright'] },
   {
     heading: 'AI',
-    items: ['Claude Code'],
-    note: 'Every day, for building and for reviewing. I also build AI features into the product.',
+    items: ['Claude Code', 'Cursor'],
+    note: 'Every day, for planning, building and reviewing. I also build AI features into the product.',
   },
   {
     heading: 'Ways of working',
     items: [
-      'Agile sprints',
+      'Git/Version control',
+      'TDD',
+      'Agile sprints in Jira',
+      'Github',
       'Implementation plans',
       'Prototyping',
       'Code review',
       'Feature flags',
-      'On-call',
+      'On-call rotations',
+      'Iterating on product feedback',
+      'Cross-team collaboration',
     ],
-    note: 'Jira and Git throughout.',
   },
   {
     heading: 'Design',
-    items: ['Graphic design', 'Typography'],
-    note: "Studied both. These days I'm on the receiving end of Figma files more than I'm making them.",
+    items: ['Figma', 'Graphic design', 'Typography', 'Web design'],
+    note: "Took several design courses in college, and used to design UIs before building them earlier in my career. At Vitally, I've mostly been on the receiving end of Figma files, however, I've also had experience building from vibe-coded prototypes ",
   },
 ];
 
