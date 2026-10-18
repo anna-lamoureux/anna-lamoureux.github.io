@@ -42,9 +42,6 @@ export function App() {
         </Section>
 
         <Section id="contact" accent="peach" label={contact.label} heading={contact.heading}>
-          <div className="prose">
-            <p>{contact.text}</p>
-          </div>
           <div className="link-buttons">
             {contact.links.map((link) => (
               <LinkButton key={link.label} href={link.href} accent={link.accent}>

@@ -14,8 +14,8 @@ export const intro = {
   headline: 'I build the parts of software people',
   headlineAccent: 'look at all day.',
   paragraphs: [
-    "Most of what I've built is the stuff people have open at work from nine to five: dashboards, editors, automation tools and, more recently, AI agents. I work across the stack (TypeScript, React, Node, Postgres). I also studied design along with computer science, which is probably why I can't leave a confusing screen alone.",
-    "I've been at Vitally, a customer-success platform, since 2023. Before that I spent five years at The Jackson Laboratory building tools for genomics researchers.",
+    "I'm a software engineer who advocates for users whenever possible, and I've spent nine years building and supporting productivity software that people rely on. I pick up technical skills fast: I went from a frontend Angular developer on small research applications to a full-stack engineer on a fast-paced team supporting a 24/7 live-service platform used by customers all over the world.",
+    "I ask questions early, flag risks to the stack or the users before they become problems, and test aggressively. Over the past year I've been working agentic AI into my development cycle to ship the same quality of code faster, while also building agentic AI features into the product.",
   ],
 };
 
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     tagline:
       'Gave users a way to stop an automation run in progress, or undo what a run had already done, without contacting support.',
     more: [
-      'Automations can change thousands of records, and a mistake used to mean a support ticket and manual data repair. This project added stop and undo for individual runs, and stop in bulk.',
+      'Automations can change thousands of records, and a mistake used to mean a support ticket and manual data repair. Stopping or undoing a run was technically possible before, but only certain people had the button and you had to get the timing right. This project made it a first-class action: stop and undo for individual runs, and stop in bulk. A quality-of-life update more than a flashy one.',
       "Not everything is reversible: a created task can be removed, but a sent email can't be unsent. Most of the work was backend, in an older part of the codebase where changes carry risk, so much of the effort went into refactoring safely and deciding what could be offered reliably.",
     ],
   },
@@ -76,7 +76,7 @@ export const projects: Project[] = [
       'A way for teams to standardize the targets they manage accounts against, with live progress toward a deadline.',
     more: [
       'Customers wanted to normalize their processes and target metrics across the accounts they manage.',
-      'A goal has a deadline and any number of conditions, measured manually or automatically, that must be met for it to count as achieved. Progress is tracked live as the deadline approaches.',
+      'A goal has a deadline and any number of conditions, measured manually or automatically, that must be met for it to count as achieved. Progress is tracked live as the deadline approaches. Goals can be saved as templates, and they show up in tables, widgets, documents and automations.',
     ],
   },
   {
@@ -125,7 +125,7 @@ export const projects: Project[] = [
       'A self-hosted reference library for tabletop games that reads the rulebook PDFs you own and makes them searchable.',
     more: [
       'You bring your own PDFs (spells, creatures, items, rules) and it extracts structured, searchable entries, each with its source and page number. It runs on your own hardware, with no marketplace and no telemetry. Dungeons & Dragons 5e comes first.',
-      'It is a React and Node app with MongoDB, a search engine, and a small service for the AI extraction, all in Docker. I design it and make the decisions, and AI coding agents write most of the code to my specs.',
+      'It is a React and Node app with MongoDB, a search engine, and a small service for the AI extraction, all in Docker. I design it and make the decisions, and AI coding agents write most of the code to my specs. The code is private for now.',
     ],
     personal: true,
   },
@@ -185,63 +185,89 @@ export type ToolGroup = {
 };
 
 export const toolbox: ToolGroup[] = [
-  { heading: 'Languages', items: ['TypeScript', 'JavaScript', 'SQL', 'HTML', '(S)CSS'] },
+  { heading: 'Languages', items: ['TypeScript', 'JavaScript', 'SQL', 'HTML', 'CSS'] },
   {
     heading: 'Frontend',
-    items: ['React', 'Redux', 'Storybook', 'Ducks', 'React-Aria', 'Ant Design'],
-    note: 'Earlier in my career: five years of Angular, Material Design and D3.',
+    items: [
+      'React',
+      'Redux',
+      'Storybook',
+      'Design systems',
+      'Accessibility',
+      'Recharts',
+      'D3',
+      'Angular',
+    ],
   },
   {
     heading: 'Backend and data',
     items: [
       'Node.js',
-      'Express',
+      'REST APIs',
       'OpenAPI',
-      'Zod',
+      'Objection/Knex',
       'PostgreSQL',
       'Elasticsearch',
-      'Migrations',
-      'Recurring and tech request jobs',
+      'Cron and one-off support jobs',
+      'Zero-downtime migrations',
     ],
-    note: 'Postgres schema changes including tables, enums, triggers, constraints, validations, foreign keys, indexes, etc.',
   },
-  { heading: 'Testing', items: ['Jest', 'React Testing Library', 'Playwright'] },
   {
     heading: 'AI',
-    items: ['Claude Code', 'Cursor'],
+    items: [
+      'LLM tool calling',
+      'AI agent features',
+      'Validating model output',
+      'Claude Code',
+      'Cursor',
+      'AI-assisted development',
+    ],
     note: 'Every day, for planning, building and reviewing. I also build AI features into the product.',
   },
   {
-    heading: 'Ways of working',
+    heading: 'Testing and reliability',
     items: [
-      'Git/Version control',
-      'TDD',
-      'Agile sprints in Jira',
-      'Github',
-      'Implementation plans',
+      'Jest',
+      'React Testing Library',
+      'Playwright',
+      'Buildkite CI',
+      'Feature flags',
+      'Incident response',
+      'On-call',
+      'Sentry',
+      'Honeycomb',
+      'FullStory',
+      'Product analytics',
+    ],
+  },
+  {
+    heading: 'Practices',
+    items: [
+      'Agile',
+      'Technical planning',
+      'Roadmapping',
       'Prototyping',
       'Code review',
-      'Feature flags',
-      'On-call rotations',
-      'Iterating on product feedback',
-      'Cross-team collaboration',
+      'Cross-functional collaboration',
+      'Git',
+      'Jira',
+      'Figma handoff',
     ],
   },
   {
     heading: 'Design',
     items: ['Figma', 'Graphic design', 'Typography', 'Web design'],
-    note: "Took several design courses in college, and used to design UIs before building them earlier in my career. At Vitally, I've mostly been on the receiving end of Figma files, however, I've also had experience building from vibe-coded prototypes ",
+    note: "Took several design courses in college, and used to design UIs before building them earlier in my career. At Vitally I've mostly been on the receiving end of Figma files, though I've also built from vibe-coded prototypes.",
   },
 ];
 
 export const contact = {
   label: 'Contact',
   heading: 'Say hello',
-  text: 'Email is the best way to reach me.',
   links: [
     { label: 'email', href: 'mailto:anna.lamoureux@gmail.com', accent: 'blue' },
-    { label: 'github', href: 'https://github.com/anna-lamoureux', accent: 'mauve' },
     { label: 'linkedin', href: 'https://linkedin.com/in/anna-lamoureux', accent: 'magenta' },
+    { label: 'github', href: 'https://github.com/anna-lamoureux', accent: 'mauve' },
   ] satisfies { label: string; href: string; accent: Accent }[],
 };
 
