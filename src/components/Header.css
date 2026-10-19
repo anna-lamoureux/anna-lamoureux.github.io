@@ -34,3 +34,15 @@
 .header-link:hover {
   border-bottom-color: var(--c);
 }
+
+/* On phone-width screens the section links go away: the page is short enough to scroll,
+   and the name and the theme toggle keep the row to themselves. */
+@media (max-width: 540px) {
+  .header {
+    flex-wrap: nowrap;
+  }
+
+  .header-link {
+    display: none;
+  }
+}
