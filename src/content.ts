@@ -135,11 +135,10 @@ export const about = {
   label: 'About',
   heading: 'Who I am',
   paragraphs: [
-    "I like knowing why something is being built before I build it, and I'll say so when a spec is going to confuse the people who have to use it. Sometimes the right fix is to take a feature out.",
-    'I write things down. That means a plan before a big project, and a proper write-up when something breaks, including the times it was my change that broke it.',
-    "I use AI coding tools every day now. They're useful, and they're confidently wrong often enough that I review their work the way I'd review anyone else's.",
-    'I like helping people learn, when they ask. Lately that has meant tutoring someone through an accelerated Python course, mostly the fundamentals, and showing a friend how to use Claude and Claude Code to automate parts of their work. At Vitally I was the first point of contact for a new engineer during his first couple of weeks.',
-    'Away from the computer I play D&D, 3D print small fixes for things around the apartment, read, and keep a cat named Inigo company.',
+    // Work paragraph: Claude's draft 2, pending Anna's edit.
+    "I've been a product engineer for longer than I've had the title. Even as a frontend developer at a research lab, I was designing the interface before I built it and learning how the scientists actually worked so it would fit them. I want to make software that people use and enjoy using, and I think the best features are the ones that look simple. Great design mostly goes unnoticed, because it stays out of the user's way unless there's a good reason not to. That's why I like engineering to be in the room early: I want to know where the designs came from, what got cut, and who the users are, so the hundred small decisions the mockups don't cover get made through their eyes. I name risk when I see it and plan for it rather than hoping. I poke at the edges of a feature to find where its assumptions break, and when the unknown unknowns get through anyway, I write down what happened so the next person doesn't trip on it. I try to leave code cleaner than I found it and to help a system age gracefully.",
+    // Personal paragraph: Anna's own words.
+    'I grew up in Downeast Maine, left for college in Boston, MA, later transferring to Moravian College (now Moravian University) in Bethlehem, PA, before returning to Maine for a few years to work. The pandemic and the move to fully working from home led me out to the Midwest for a few years, but I gravitated back to New England and landed in Haverhill, MA, the place I still call home with my cat Inigo. Away from work I play TTRPGs and video games with friends when time allows, cook, snowboard when there\u2019s snow, and keep a collection of mechanical keyboards that I still tinker with from time to time. Lately I\u2019ve been taking on more home technology projects that mean taking more ownership of my data, such as replacing all of my proprietary smart home devices to work with Home Assistant and preferring locally hosted, open-source solutions.',
   ],
 };
 
