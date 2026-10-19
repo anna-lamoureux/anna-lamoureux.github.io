@@ -83,7 +83,7 @@ summary:focus-visible {
 }
 
 /* The full portrait, uncropped, beside the About text on wide screens with its top level with
-   the small section label; above the text on narrow ones. */
+   the section heading; above the text on narrow ones. */
 .about-photo {
   display: block;
   width: 210px;
@@ -97,6 +97,6 @@ summary:focus-visible {
   .about-photo {
     float: right;
     width: 260px;
-    margin: -84px 0 16px 40px;
+    margin: -54px 0 16px 40px;
   }
 }
