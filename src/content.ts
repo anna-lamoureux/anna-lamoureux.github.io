@@ -40,7 +40,7 @@ export const projects: Project[] = [
     meta: 'Vitally · 2026',
     title: 'Unreleased AI agent work',
     tagline:
-      "This one isn't formally announced yet, and I won't be the one to leak it. My part in it is a conversation for an interview.",
+      "This one isn't formally announced yet, and I won't be the one to leak it. If you want to know more, interview me and I'll tell you all about it!",
     unreleased: true,
   },
   {
@@ -139,7 +139,7 @@ export const about = {
   label: 'About',
   heading: 'Who I am',
   // Drop a photo into public/ and point at it here, e.g. { src: '/anna.jpg', alt: 'Anna Lamoureux' }.
-  photo: undefined as { src: string; alt: string } | undefined,
+  photo: { src: '/anna.jpg', alt: 'Anna Lamoureux' } as { src: string; alt: string } | undefined,
   paragraphs: [
     "I feel like I've been a product engineer for longer than I've had the official title. Even as a frontend developer at the start of my career, I was concerned with the design system and the user experience. I've always wanted to make software that people use and enjoy using. I think the best features are the ones that seem simple, and great design can often go unacknowledged because it largely stays out of the user's way. As an engineer, I like being included in the product discussions early: I want to know who the users are and what problems we're trying to solve, so the hundred small decisions the mockups may not cover get made through their eyes. Happy, productive users translate to contract renewals for the business.",
     // Personal paragraph: Anna's own words.
