@@ -1,13 +1,13 @@
 // All of the text on the site lives here.
 
-export type Accent = 'blue' | 'mauve' | 'magenta' | 'peach' | 'green';
+export type Accent = 'blue' | 'magenta' | 'peach' | 'green' | 'neutral';
 
 export const nav: { label: string; href: string; accent: Accent }[] = [
   { label: 'About', href: '#about', accent: 'green' },
   { label: 'Experience', href: '#experience', accent: 'magenta' },
   { label: 'Projects', href: '#projects', accent: 'blue' },
-  { label: 'Toolbox', href: '#toolbox', accent: 'mauve' },
-  { label: 'Contact', href: '#contact', accent: 'peach' },
+  { label: 'Toolbox', href: '#toolbox', accent: 'peach' },
+  { label: 'Contact', href: '#contact', accent: 'neutral' },
 ];
 
 export const intro = {
@@ -271,7 +271,7 @@ export const contact = {
   links: [
     { label: 'email', href: 'mailto:anna.lamoureux@gmail.com', accent: 'blue' },
     { label: 'linkedin', href: 'https://linkedin.com/in/anna-lamoureux', accent: 'magenta' },
-    { label: 'github', href: 'https://github.com/anna-lamoureux', accent: 'mauve' },
+    { label: 'github', href: 'https://github.com/anna-lamoureux', accent: 'peach' },
   ] satisfies { label: string; href: string; accent: Accent }[],
 };
 

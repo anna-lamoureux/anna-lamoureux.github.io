@@ -14,7 +14,7 @@
   border-color: var(--c);
 }
 
-/* Where and when: magenta for jobs, mauve for personal projects. */
+/* Where and when: magenta for jobs, orange for personal projects. */
 .work-card-meta {
   font-family: var(--mono);
   font-size: 12.5px;
@@ -22,7 +22,7 @@
 }
 
 .work-card-personal .work-card-meta {
-  color: var(--mauve);
+  color: var(--peach);
 }
 
 /* Personal projects take green for the title, hint, hover border and bubble. */

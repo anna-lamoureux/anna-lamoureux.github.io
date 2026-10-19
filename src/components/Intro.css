@@ -17,7 +17,7 @@
   /* The second sentence starts on its own line and wraps naturally from there. */
   display: block;
   font-style: normal;
-  color: var(--mauve);
+  color: var(--peach);
 }
 
 .intro p {

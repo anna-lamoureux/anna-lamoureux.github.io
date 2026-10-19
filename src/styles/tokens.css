@@ -11,7 +11,6 @@
 
   /* accents */
   --blue: #1c8cf5;
-  --mauve: #7a35d6;
   --magenta: #c8149a;
   --peach: #c9500c;
   --green: #12a150;
@@ -37,7 +36,6 @@
 
   /* accents */
   --blue: #6cb8ff;
-  --mauve: #c4a1f9;
   --magenta: #f77bd0;
   --peach: #fab387;
   --green: #5fdc97;
@@ -47,8 +45,8 @@
 .c-blue {
   --c: var(--blue);
 }
-.c-mauve {
-  --c: var(--mauve);
+.c-neutral {
+  --c: var(--strong);
 }
 .c-magenta {
   --c: var(--magenta);

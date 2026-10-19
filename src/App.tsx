@@ -40,11 +40,11 @@ export function App() {
           </div>
         </Section>
 
-        <Section id="toolbox" accent="mauve" label="Toolbox" heading="What I use">
+        <Section id="toolbox" accent="peach" label="Toolbox" heading="What I use">
           <Toolbox groups={toolbox} />
         </Section>
 
-        <Section id="contact" accent="peach" label={contact.label} heading={contact.heading}>
+        <Section id="contact" accent="neutral" label={contact.label} heading={contact.heading}>
           <div className="link-buttons">
             {contact.links.map((link) => (
               <LinkButton key={link.label} href={link.href} accent={link.accent}>
