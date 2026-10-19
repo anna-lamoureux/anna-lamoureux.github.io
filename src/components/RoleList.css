@@ -8,12 +8,7 @@
   display: grid;
   grid-template-columns: 150px 1fr;
   gap: 18px;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.role-list > li:last-child {
-  border-bottom: 0;
+  padding: 14px 0;
 }
 
 @media (max-width: 600px) {

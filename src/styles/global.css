@@ -77,7 +77,6 @@ summary:focus-visible {
 }
 
 .prose p {
-  max-width: 66ch;
   font-size: 16.5px;
   margin: 0 0 14px;
 }
