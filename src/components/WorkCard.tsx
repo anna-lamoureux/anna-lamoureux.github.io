@@ -12,7 +12,7 @@ const EDGE = 12;
  * With the keyboard (or a tap), the bubble opens under the card instead.
  */
 export function WorkCard({ project }: { project: Project }) {
-  const { meta, title, tagline, more, links, personal } = project;
+  const { meta, title, tagline, more, links, personal, unreleased } = project;
   const hasMore = Boolean(more?.length);
 
   const bubble = useRef<HTMLDivElement>(null);
@@ -33,7 +33,7 @@ export function WorkCard({ project }: { project: Project }) {
 
   return (
     <article
-      className={`work-card${personal ? ' work-card-personal' : ''}`}
+      className={`work-card${personal ? ' work-card-personal' : ''}${unreleased ? ' work-card-unreleased' : ''}`}
       tabIndex={hasMore ? 0 : undefined}
       onMouseMove={hasMore ? follow : undefined}
       onMouseLeave={() => setCursor(null)}

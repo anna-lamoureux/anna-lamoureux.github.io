@@ -25,6 +25,21 @@
   color: var(--mauve);
 }
 
+/* Personal projects take green for the title, hint, hover border and bubble. */
+.work-card-personal {
+  --c: var(--green);
+}
+
+.work-card-personal h3 {
+  color: var(--c);
+}
+
+/* Work that isn't public yet sits on a faint orange wash. */
+.work-card-unreleased {
+  background: color-mix(in srgb, var(--peach) 7%, var(--surface));
+  border-color: color-mix(in srgb, var(--peach) 25%, var(--line));
+}
+
 /* Titles stay on one line so every card is the same height. */
 .work-card h3 {
   margin: 0;

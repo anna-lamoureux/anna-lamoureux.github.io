@@ -31,6 +31,8 @@ export type Project = {
   links?: { label: string; href: string }[];
   /** Personal projects get a different caption colour */
   personal?: boolean;
+  /** Work that can't be described yet: drawn on a faint tinted background */
+  unreleased?: boolean;
 };
 
 export const projects: Project[] = [
@@ -39,6 +41,7 @@ export const projects: Project[] = [
     title: 'Unreleased AI agent work',
     tagline:
       "This one isn't formally announced yet, and I won't be the one to leak it. My part in it is a conversation for an interview.",
+    unreleased: true,
   },
   {
     meta: 'Vitally · 2026',
