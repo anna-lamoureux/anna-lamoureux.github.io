@@ -11,7 +11,7 @@
   line-height: 1.1;
   color: var(--strong);
   margin: 12px 0 0;
-  max-width: 26ch;
+  max-width: 80%;
   text-wrap: balance;
 }
 

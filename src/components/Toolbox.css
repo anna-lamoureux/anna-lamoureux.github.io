@@ -10,6 +10,16 @@
   padding: 12px 0;
 }
 
+/* A shorter rule between rows, so only the section dividers run full width. */
+.toolbox-row:not(:last-child)::after {
+  content: '';
+  grid-column: 1 / -1;
+  width: 70%;
+  height: 1px;
+  margin-top: 4px;
+  background: var(--line);
+}
+
 @media (max-width: 600px) {
   .toolbox-row {
     grid-template-columns: 1fr;
@@ -43,7 +53,7 @@
   color: var(--strong);
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius);
 }
 
 .toolbox p {

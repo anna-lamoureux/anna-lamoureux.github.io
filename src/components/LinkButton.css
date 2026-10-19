@@ -17,7 +17,7 @@
   text-decoration: none;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: var(--radius);
   box-shadow: 4px 4px 0 color-mix(in srgb, var(--c) 30%, var(--base));
   transition:
     transform 0.08s,
@@ -29,7 +29,7 @@
   content: '';
   width: 8px;
   height: 8px;
-  border-radius: 2px;
+  border-radius: var(--radius-dot);
   background: var(--c);
 }
 

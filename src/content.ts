@@ -11,8 +11,8 @@ export const nav: { label: string; href: string; accent: Accent }[] = [
 
 export const intro = {
   label: 'Product engineer · Haverhill, Massachusetts',
-  headline: 'Good software stays out of your way.',
-  headlineAccent: 'Great software stops you shooting yourself in the foot.',
+  headline: 'Good software gets out of your way.',
+  headlineAccent: 'Great software knows when not to.',
   paragraphs: [
     "I'm a software engineer who advocates for users whenever possible, and I've spent nine years building and supporting productivity software that people rely on. I pick up technical skills fast: I went from a frontend Angular developer on small research applications to a full-stack engineer on a fast-paced team supporting a 24/7 live-service platform used by customers all over the world.",
     "I ask questions early, flag risks to the stack or the users before they become problems, and test aggressively. I poke at the edges of features to find where their assumptions break, and I try to leave code cleaner than I found it, hoping to help systems age gracefully. When the inevitable unknown unknowns strike, as they always do, I write down what happened so the next person doesn't have to make the same mistake. Over the past year I've been working agentic AI into my development cycle to ship the same quality of code faster, while also building agentic AI features into the product.",

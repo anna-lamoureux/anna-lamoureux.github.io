@@ -6,7 +6,7 @@
   padding: 20px 20px 16px;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: var(--radius);
 }
 
 .work-card:hover,
@@ -80,7 +80,7 @@
   padding: 16px 18px;
   background: var(--surface);
   border: 1px solid var(--c);
-  border-radius: 12px;
+  border-radius: var(--radius);
   /* A hard offset layer underneath plus two soft shadows, so it reads as lifted off the page. */
   box-shadow:
     6px 6px 0 color-mix(in srgb, var(--c) 28%, var(--surface)),

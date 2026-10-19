@@ -16,6 +16,10 @@
   --peach: #c9500c;
   --green: #12a150;
 
+  /* one corner radius for everything boxy, and a smaller one for the little colour squares */
+  --radius: 10px;
+  --radius-dot: 2px;
+
   --pixel: 'Geist Pixel', 'Geist Mono', monospace;
   --sans: 'Geist', 'Helvetica Neue', Arial, sans-serif;
   --mono: 'Geist Mono', 'SF Mono', Menlo, monospace;
