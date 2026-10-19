@@ -14,18 +14,14 @@
   border-color: var(--c);
 }
 
-/* Where and when: magenta for jobs, orange for personal projects. */
+/* Where and when: a muted shade of the card's own colour. */
 .work-card-meta {
   font-family: var(--mono);
   font-size: 12.5px;
-  color: var(--magenta);
+  color: color-mix(in srgb, var(--c) 60%, var(--muted));
 }
 
-.work-card-personal .work-card-meta {
-  color: var(--peach);
-}
-
-/* Personal projects take green for the title, hint, hover border and bubble. */
+/* Personal projects are green throughout; everything else takes the section's blue. */
 .work-card-personal {
   --c: var(--green);
 }
@@ -34,10 +30,10 @@
   color: var(--c);
 }
 
-/* Work that isn't public yet sits on a faint orange wash. */
+/* Work that isn't public yet sits on a faint grey wash, faded rather than coloured. */
 .work-card-unreleased {
-  background: color-mix(in srgb, var(--peach) 7%, var(--surface));
-  border-color: color-mix(in srgb, var(--peach) 25%, var(--line));
+  background: color-mix(in srgb, var(--muted) 8%, var(--surface));
+  border-color: color-mix(in srgb, var(--muted) 35%, var(--line));
 }
 
 /* Titles stay on one line so every card is the same height. */
@@ -46,7 +42,7 @@
   font-size: 19px;
   font-weight: 600;
   line-height: 1.25;
-  color: var(--blue);
+  color: var(--c);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
