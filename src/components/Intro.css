@@ -6,16 +6,16 @@
 
 .intro h1 {
   font-family: var(--pixel);
-  font-size: clamp(30px, 4.6vw, 50px);
+  font-size: clamp(30px, 4.3vw, 48px);
   font-weight: 400;
   line-height: 1.1;
   color: var(--strong);
   margin: 12px 0 0;
-  max-width: 80%;
-  text-wrap: balance;
 }
 
 .intro h1 em {
+  /* The second sentence starts on its own line and wraps naturally from there. */
+  display: block;
   font-style: normal;
   color: var(--mauve);
 }
