@@ -6,6 +6,7 @@ export const nav: { label: string; href: string; accent: Accent }[] = [
   { label: 'About', href: '#about', accent: 'green' },
   { label: 'Experience', href: '#experience', accent: 'magenta' },
   { label: 'Projects', href: '#projects', accent: 'blue' },
+  { label: 'Toolbox', href: '#toolbox', accent: 'mauve' },
   { label: 'Contact', href: '#contact', accent: 'peach' },
 ];
 

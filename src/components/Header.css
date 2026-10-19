@@ -38,7 +38,7 @@
 /* The links may wrap under the name as one row. Once that row would itself break
    (the theme toggle dropping to a third line), the links go away and only the name and
    the toggle remain: the page is short enough to scroll. */
-@media (max-width: 399px) {
+@media (max-width: 479px) {
   .header {
     flex-wrap: nowrap;
   }
