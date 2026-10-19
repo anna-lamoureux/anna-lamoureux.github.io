@@ -18,6 +18,9 @@ export function App() {
         <Intro {...intro} />
 
         <Section id="about" accent="green" label={about.label} heading={about.heading}>
+          {about.photo && (
+            <img className="about-photo" src={about.photo.src} alt={about.photo.alt} />
+          )}
           <div className="prose">
             {about.paragraphs.map((text) => (
               <p key={text}>{text}</p>

@@ -81,3 +81,21 @@ summary:focus-visible {
   font-size: 16.5px;
   margin: 0 0 14px;
 }
+
+/* A small photo beside the About text on wide screens, above it on narrow ones. */
+.about-photo {
+  display: block;
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  margin: 0 0 14px;
+}
+
+@media (min-width: 720px) {
+  .about-photo {
+    float: right;
+    margin: 4px 0 14px 28px;
+  }
+}
