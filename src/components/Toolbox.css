@@ -1,0 +1,63 @@
+.toolbox {
+  margin: 0;
+}
+
+/* Same two-column rhythm as the experience list. */
+.toolbox-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 18px;
+  padding: 12px 0;
+}
+
+/* A shorter rule between rows, so only the section dividers run full width. */
+.toolbox-row:not(:last-child)::after {
+  content: '';
+  grid-column: 1 / -1;
+  width: 70%;
+  height: 1px;
+  margin-top: 4px;
+  background: var(--line);
+}
+
+@media (max-width: 600px) {
+  .toolbox-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+.toolbox dt {
+  padding-top: 4px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: color-mix(in srgb, var(--c) 50%, var(--muted));
+}
+
+.toolbox dd {
+  margin: 0;
+}
+
+.toolbox ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toolbox li {
+  padding: 2px 10px;
+  font-size: 14.5px;
+  color: var(--strong);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.toolbox p {
+  margin: 8px 0 0;
+  font-size: 14.5px;
+  color: var(--muted);
+}

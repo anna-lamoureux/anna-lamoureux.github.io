@@ -1,0 +1,128 @@
+.work-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 20px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.work-card:hover,
+.work-card:focus-within {
+  border-color: var(--c);
+}
+
+/* Where and when: a muted shade of the card's own colour. */
+.work-card-meta {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: color-mix(in srgb, var(--c) 60%, var(--muted));
+}
+
+/* Personal projects use a deeper shade of the section's blue, so they read as related but distinct. */
+.work-card-personal {
+  --c: var(--blue-deep);
+}
+
+.work-card-personal h3 {
+  color: var(--c);
+}
+
+/* Work that isn't public yet sits on a faint grey wash, faded rather than coloured. */
+.work-card-unreleased {
+  background: color-mix(in srgb, var(--muted) 8%, var(--surface));
+  border-color: color-mix(in srgb, var(--muted) 35%, var(--line));
+}
+
+/* Titles stay on one line so every card is the same height. */
+.work-card h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--c);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work-card p {
+  margin: 0;
+  font-size: 15.5px;
+}
+
+/* Room for four lines, for the same reason. */
+.work-card-tagline {
+  min-height: calc(1.6em * 4);
+}
+
+/* Bottom row: the "More" hint on the left, any links on the right. */
+.work-card-footer {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  white-space: nowrap;
+  min-height: 1.6em;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.work-card-hint {
+  margin-right: auto;
+  color: var(--c);
+}
+
+/*
+ * The bubble. By default it hangs under the card (keyboard focus, touch).
+ * While the mouse is over the card it follows the cursor instead: WorkCard.tsx
+ * adds the -following class and sets left/top.
+ */
+.work-card-more {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% - 14px);
+  left: 12px;
+  right: 12px;
+  display: grid;
+  gap: 10px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--c);
+  border-radius: var(--radius);
+  /* A hard offset layer underneath plus two soft shadows, so it reads as lifted off the page. */
+  box-shadow:
+    6px 6px 0 color-mix(in srgb, var(--c) 28%, var(--surface)),
+    0 10px 20px color-mix(in srgb, var(--strong) 14%, transparent),
+    0 28px 60px color-mix(in srgb, var(--strong) 22%, transparent);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.12s,
+    visibility 0.12s;
+}
+
+.work-card:focus-within .work-card-more,
+.work-card-more-following {
+  opacity: 1;
+  visibility: visible;
+}
+
+.work-card-more-following {
+  position: fixed;
+  right: auto;
+  width: min(340px, calc(100vw - 24px));
+}
+
+.work-card-more p {
+  font-size: 14.5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-card-more {
+    transition: none;
+  }
+}

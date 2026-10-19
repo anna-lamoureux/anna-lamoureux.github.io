@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 22px 0;
+}
+
+.header-name {
+  font-family: var(--pixel);
+  font-size: 20px;
+  color: var(--strong);
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 13.5px;
+}
+
+.header-link {
+  color: var(--c);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  /* Top padding matches the underline's space so the text stays centred in the header. */
+  padding: 4px 0 2px;
+}
+
+.header-link:hover {
+  border-bottom-color: var(--c);
+}
+
+/* The links may wrap under the name as one row. Once that row would itself break
+   (the theme toggle dropping to a third line), the links go away and only the name and
+   the toggle remain: the page is short enough to scroll. */
+@media (max-width: 479px) {
+  .header {
+    flex-wrap: nowrap;
+  }
+
+  .header-link {
+    display: none;
+  }
+}
