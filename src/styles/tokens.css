@@ -11,6 +11,8 @@
 
   /* accents */
   --blue: #1c8cf5;
+  /* The same blue with the lights turned down, for things that belong to the section but should sit back. */
+  --blue-deep: oklch(from var(--blue) calc(l - 0.17) c h);
   --magenta: #c8149a;
   --peach: #c9500c;
   --green: #12a150;
@@ -36,6 +38,7 @@
 
   /* accents */
   --blue: #6cb8ff;
+  --blue-deep: oklch(from var(--blue) calc(l - 0.14) c h);
   --magenta: #f77bd0;
   --peach: #fab387;
   --green: #5fdc97;

@@ -21,9 +21,9 @@
   color: color-mix(in srgb, var(--c) 60%, var(--muted));
 }
 
-/* Personal projects are green throughout; everything else takes the section's blue. */
+/* Personal projects use a deeper shade of the section's blue, so they read as related but distinct. */
 .work-card-personal {
-  --c: var(--green);
+  --c: var(--blue-deep);
 }
 
 .work-card-personal h3 {
