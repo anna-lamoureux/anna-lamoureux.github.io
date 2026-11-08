@@ -13,7 +13,8 @@ export const nav: { label: string; href: string; accent: Accent }[] = [
 export const intro = {
   label: 'Product engineer · Haverhill, Massachusetts',
   headline: 'Good software gets out of your way.',
-  headlineAccent: 'Great software knows when not to.',
+  // Non-breaking space keeps "right direction." together, so the line breaks after "the".
+  headlineAccent: 'Great software points you in the right direction.',
   paragraphs: [
     "I'm a software engineer who advocates for users whenever possible, and I've spent nine years building and supporting productivity software that people rely on. I pick up technical skills fast: I went from a frontend Angular developer on small research applications to a full-stack engineer on a fast-paced team supporting a 24/7 live-service platform used by customers all over the world.",
     "I ask questions early, flag risks to the stack or the users before they become problems, and test aggressively. I poke at the edges of features to find where their assumptions break, and I try to leave code cleaner than I found it, hoping to help systems age gracefully. When the inevitable unknown unknowns strike, as they always do, I write down what happened so the next person doesn't have to make the same mistake. Over the past year I've been working agentic AI into my development cycle to ship the same quality of code faster, while also building agentic AI features into the product.",
@@ -47,9 +48,9 @@ export const projects: Project[] = [
     meta: 'Vitally · 2026',
     title: 'Automation run management',
     tagline:
-      'Gave users a way to stop an automation run in progress, or undo what a run had already done, without contacting support.',
+      'Made stopping an automation run, or undoing what it already did, easier to find and understand, right where people look at their runs.',
     more: [
-      'Automations can change thousands of records, and a mistake used to mean a support ticket and manual data repair. Stopping or undoing a run was technically possible before, but only certain people had the button and you had to get the timing right. This project made it a first-class action: stop and undo for individual runs, and stop in bulk. A quality-of-life update more than a flashy one.',
+      'Automations can change thousands of records, so people need to be able to see what a run did and stay in control of it. Stopping or undoing a run was technically possible before, but only certain people had the button and you had to get the timing right. This project made it a first-class action: stop and undo for individual runs, and stop in bulk. A quality-of-life update more than a flashy one.',
       "Not everything is reversible: a created task can be removed, but a sent email can't be unsent. Most of the work was backend, in an older part of the codebase where changes carry risk, so much of the effort went into refactoring safely and deciding what could be offered reliably.",
     ],
   },

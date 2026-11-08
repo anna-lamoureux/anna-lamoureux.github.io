@@ -36,7 +36,7 @@ summary:focus-visible {
 }
 
 .page {
-  max-width: 1040px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -82,8 +82,8 @@ summary:focus-visible {
   margin: 0 0 14px;
 }
 
-/* The full portrait, uncropped, beside the About text on wide screens with its top level with
-   the section heading; above the text on narrow ones. */
+/* The full portrait, uncropped: above the text on narrow screens, beside it on wider ones
+   with its top level with the section heading. */
 .about-photo {
   display: block;
   width: 210px;
@@ -93,10 +93,37 @@ summary:focus-visible {
   margin: 0 0 16px;
 }
 
+/* Mid-size screens: the photo floats right and the text wraps underneath it, which uses the
+   narrower width best. */
 @media (min-width: 720px) {
   .about-photo {
     float: right;
     width: 260px;
     margin: -54px 0 16px 40px;
+  }
+}
+
+/* Wide screens: the text is short enough next to the photo that wrapping would leave a line
+   or two dangling underneath, so the photo gets its own column instead, its top level with
+   the first paragraph. */
+@media (min-width: 1100px) {
+  .about-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    column-gap: 48px;
+    align-items: start;
+  }
+
+  .about-photo {
+    float: none;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: 4px 0 0;
+  }
+
+  .about-body .prose {
+    grid-column: 1;
+    grid-row: 1;
   }
 }

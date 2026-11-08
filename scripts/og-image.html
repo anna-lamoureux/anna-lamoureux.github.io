@@ -1,0 +1,69 @@
+<!--
+  Source for public/og-image.png, the 1200x627 link-preview card (LinkedIn, Slack, iMessage).
+  To regenerate, render this file at 1200x627, e.g.:
+    chrome-headless-shell --hide-scrollbars --window-size=1200,627 --virtual-time-budget=4000 \
+      --screenshot=public/og-image.png file://$PWD/scripts/og-image.html
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Geist+Mono:wght@400;500&display=swap"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+      body {
+        width: 1200px;
+        height: 627px;
+        background: #eff1f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+      .dots {
+        display: flex;
+        gap: 18px;
+      }
+      .dots i {
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        display: block;
+      }
+      h1 {
+        margin: 0;
+        font-family: 'Geist Pixel', 'Geist Mono', monospace;
+        font-weight: 400;
+        font-size: 112px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #2f3147;
+      }
+      p {
+        margin: 0;
+        font-family: 'Geist Mono', monospace;
+        font-size: 28px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #6c6f85;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dots">
+      <i style="background: #1c8cf5"></i>
+      <i style="background: #c8149a"></i>
+      <i style="background: #c9500c"></i>
+      <i style="background: #12a150"></i>
+    </div>
+    <h1>Anna Lamoureux</h1>
+    <p>Senior full-stack product engineer</p>
+  </body>
+</html>

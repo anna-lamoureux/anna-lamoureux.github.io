@@ -1,3 +1,17 @@
+/* The timeline track only exists on wide screens; below that the list is text only. */
+.role-list-wrap {
+  --track: 0px;
+  --track-gap: 0px;
+  position: relative;
+}
+
+@media (min-width: 1100px) {
+  .role-list-wrap {
+    --track: 420px;
+    --track-gap: 48px;
+  }
+}
+
 .role-list {
   list-style: none;
   margin: 0;
@@ -11,11 +25,12 @@
   padding: 14px 0;
 }
 
-/* A shorter rule between employers, so only the section dividers run full width. */
+/* A shorter rule between employers, so only the section dividers run full width. It stops
+   short of the timeline so the bars float free of it. */
 .role-list > li:not(:last-child)::after {
   content: '';
   grid-column: 1 / -1;
-  width: 70%;
+  width: min(70%, calc(100% - var(--track) - var(--track-gap)));
   height: 1px;
   margin-top: 4px;
   background: var(--line);
@@ -30,7 +45,7 @@
 
 /* Dates use a muted mix of the section color. */
 .role-list-years,
-.role-list-roles span {
+.role-list-role span {
   font-family: var(--mono);
   color: color-mix(in srgb, var(--c) 50%, var(--muted));
 }
@@ -59,18 +74,92 @@
   font-size: 15.5px;
 }
 
+/* Each role: its title and dates, then (on wide screens) its bar on the same line. */
 .role-list-roles li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--track);
+  column-gap: var(--track-gap);
+  align-items: center;
+  padding: 3px 0;
+}
+
+.role-list-role {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 4px 12px;
-  padding: 3px 0;
 }
 
-.role-list-roles b {
+.role-list-role b {
   font-weight: 500;
 }
 
-.role-list-roles span {
+.role-list-role span {
   font-size: 12.5px;
+}
+
+/* --- Timeline --- */
+
+.role-list-track,
+.role-list-grid,
+.role-list-axis {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .role-list-track {
+    display: block;
+    position: relative;
+    height: 12px;
+  }
+
+  .role-list-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    min-width: 6px;
+    border-radius: 4px;
+    background: var(--c);
+  }
+
+  /* Earlier employers in a lighter step of the same hue. */
+  .role-list > li:not(:first-child) .role-list-bar {
+    background: color-mix(in srgb, var(--c) 45%, var(--base));
+  }
+
+  /* Faint vertical rules at each labelled year, behind the bars. */
+  .role-list-grid {
+    display: block;
+    position: absolute;
+    top: 14px;
+    bottom: 30px;
+    right: 0;
+    width: var(--track);
+    pointer-events: none;
+  }
+
+  .role-list-grid span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--line);
+    opacity: 0.6;
+  }
+
+  .role-list-axis {
+    display: block;
+    position: relative;
+    height: 18px;
+    width: var(--track);
+    margin: 4px 0 0 auto;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .role-list-axis span {
+    position: absolute;
+    transform: translateX(-50%);
+  }
 }
